@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Imagine restorante.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #222;
+}
+
+header {
+    background: #ca9c9c;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 38px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: left;
+    background:rgba(255,255,255,0.3);
+    align-content: start;
+   grid-template-areas:
+   "titel bild"
+   "text bild";
+   height: 300px;
+}
+.hero img {
+    grid-area: bild;
+    width: 300px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(90%);
+}
+
+.hero h2 {
+    font-size: 36px;
+    grid-area: titel;
+    place-self: center;
+}
+.hero p {
+    grid-area: text;
+    place-self: center;
+}
+
+
+.kontakt {
+    padding: 40px;
+    text-align: center;
+}
+
+
+.button {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+
+footer {
+    background: #e6e6e6;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
