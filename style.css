@@ -232,9 +232,39 @@ p {
 }
 
 .hero h1 {
+    display: inline-block;
     font-size: clamp(38px, 7vw, 76px);
     max-width: 16ch;
+    margin-top: 6px;
+    padding: 14px 22px;
+    color: var(--ink);
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.72),
+        rgba(255, 255, 255, 0)
+    );
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
     animation: rise 0.9s ease both;
+    transition: transform 0.5s ease;
+}
+
+.hero h1::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    margin-top: 15px;
+    background: var(--ink);
+    transition: width 0.5s ease;
+}
+
+.hero h1:hover {
+    transform: translateY(-6px);
+}
+
+.hero h1:hover::after {
+    width: 250px;
 }
 
 .hero p {
