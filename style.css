@@ -248,7 +248,7 @@ p {
 .hero h1::before {
     content: "";
     position: absolute;
-    inset: -14% -10%;
+    inset: -9% -10%;
     z-index: -1;
     pointer-events: none;
     background: #fff;
@@ -262,7 +262,7 @@ p {
          2.2em  1.3em 0 -1.2em  #fff,
         -2.9em -0.9em 0 -1.3em  #fff,
          0.4em  1.9em 0 -1.3em  #fff;
-}
+}-
 
 .hero h1:hover {
     transform: translateY(-6px);
