@@ -248,7 +248,7 @@ p {
 .hero h1::before {
     content: "";
     position: absolute;
-    inset: -26% -14%;
+    inset: -14% -10%;
     z-index: -1;
     pointer-events: none;
     background: #fff;
@@ -256,12 +256,12 @@ p {
     border-radius: 46% 54% 60% 40% / 54% 44% 56% 46%;
     filter: blur(2px);
     box-shadow:
-        -3.4em  0.3em 0 -0.95em #fff,
-         3.7em -0.9em 0 -1em    #fff,
-        -2.7em  1.9em 0 -1.1em  #fff,
-         3.1em  1.7em 0 -1.15em #fff,
-        -4.2em -1.1em 0 -1.3em  #fff,
-         0.6em  2.6em 0 -1.25em #fff;
+        -2.4em  0.2em 0 -1em    #fff,
+         2.6em -0.7em 0 -1.05em #fff,
+        -1.9em  1.4em 0 -1.15em #fff,
+         2.2em  1.3em 0 -1.2em  #fff,
+        -2.9em -0.9em 0 -1.3em  #fff,
+         0.4em  1.9em 0 -1.3em  #fff;
 }
 
 .hero h1:hover {
