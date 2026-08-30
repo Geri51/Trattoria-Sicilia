@@ -244,19 +244,19 @@ p {
     transition: transform 0.5s ease;
 }
 
-/* macchia / splash traslucida dietro la PRIMA riga del titolo */
+/* macchia / splash traslucida dietro tutto il titolo */
 .hero h1::before {
     content: "";
     position: absolute;
     left: 50%;
-    top: 0;
-    width: 150%;
-    height: 2.5em;
-    transform: translate(-50%, -14%);
+    top: 50%;
+    width: 170%;
+    height: 185%;
+    transform: translate(-50%, -50%);
     z-index: -1;
     pointer-events: none;
-    opacity: 0.52;
-    background: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20340%20130'%3E%3Cdefs%3E%3Cfilter%20id='s'%20x='-15%25'%20y='-60%25'%20width='130%25'%20height='220%25'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.02%200.05'%20numOctaves='3'%20seed='3'%20result='n'/%3E%3CfeDisplacementMap%20in='SourceGraphic'%20in2='n'%20scale='30'%20xChannelSelector='R'%20yChannelSelector='G'/%3E%3C/filter%3E%3C/defs%3E%3Cg%20fill='%23ffffff'%20filter='url(%23s)'%3E%3Cellipse%20cx='170'%20cy='64'%20rx='198'%20ry='48'/%3E%3Ccircle%20cx='34'%20cy='18'%20r='24'/%3E%3Ccircle%20cx='306'%20cy='16'%20r='24'/%3E%3Ccircle%20cx='320'%20cy='106'%20r='22'/%3E%3Ccircle%20cx='24'%20cy='108'%20r='22'/%3E%3Ccircle%20cx='170'%20cy='124'%20r='24'/%3E%3Ccircle%20cx='170'%20cy='6'%20r='16'/%3E%3C/g%3E%3Cg%20fill='%23ffffff'%3E%3Ccircle%20cx='334'%20cy='44'%20r='6'/%3E%3Ccircle%20cx='6'%20cy='46'%20r='6'/%3E%3Ccircle%20cx='120'%20cy='126'%20r='5'/%3E%3Ccircle%20cx='244'%20cy='124'%20r='5'/%3E%3C/g%3E%3C/svg%3E") no-repeat center / 118% 100%;
+    opacity: 0.5;
+    background: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20340%20220'%3E%3Cdefs%3E%3Cfilter%20id='s'%20x='-15%25'%20y='-15%25'%20width='130%25'%20height='130%25'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.016%200.026'%20numOctaves='3'%20seed='7'%20result='n'/%3E%3CfeDisplacementMap%20in='SourceGraphic'%20in2='n'%20scale='26'%20xChannelSelector='R'%20yChannelSelector='G'/%3E%3C/filter%3E%3C/defs%3E%3Cg%20fill='%23ffffff'%20filter='url(%23s)'%3E%3Cellipse%20cx='170'%20cy='110'%20rx='196'%20ry='132'/%3E%3Ccircle%20cx='30'%20cy='28'%20r='30'/%3E%3Ccircle%20cx='310'%20cy='26'%20r='30'/%3E%3Ccircle%20cx='314'%20cy='192'%20r='28'/%3E%3Ccircle%20cx='26'%20cy='194'%20r='28'/%3E%3Ccircle%20cx='170'%20cy='210'%20r='26'/%3E%3Ccircle%20cx='170'%20cy='8'%20r='24'/%3E%3C/g%3E%3Cg%20fill='%23ffffff'%3E%3Ccircle%20cx='336'%20cy='96'%20r='7'/%3E%3Ccircle%20cx='6'%20cy='120'%20r='7'/%3E%3Ccircle%20cx='120'%20cy='216'%20r='5'/%3E%3Ccircle%20cx='240'%20cy='214'%20r='5'/%3E%3C/g%3E%3C/svg%3E") no-repeat center / 115% 115%;
 }
 
 .hero h1:hover {
