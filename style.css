@@ -232,16 +232,31 @@ p {
 }
 
 .hero h1 {
+    position: relative;
     display: inline-block;
     font-size: clamp(38px, 7vw, 76px);
     max-width: 16ch;
     margin-top: 6px;
-    padding: 26px 40px;
+    padding: 6px 8px;
     color: var(--ink);
-    background: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20260%20190'%3E%3Cdefs%3E%3Cfilter%20id='s'%20x='-35%25'%20y='-45%25'%20width='170%25'%20height='190%25'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.022'%20numOctaves='3'%20seed='4'%20result='n'/%3E%3CfeDisplacementMap%20in='SourceGraphic'%20in2='n'%20scale='38'%20xChannelSelector='R'%20yChannelSelector='G'/%3E%3C/filter%3E%3C/defs%3E%3Cg%20fill='%23ffffff'%20fill-opacity='0.5'%20filter='url(%23s)'%3E%3Cellipse%20cx='130'%20cy='95'%20rx='122'%20ry='80'/%3E%3Ccircle%20cx='24'%20cy='30'%20r='24'/%3E%3Ccircle%20cx='236'%20cy='28'%20r='24'/%3E%3Ccircle%20cx='244'%20cy='120'%20r='22'/%3E%3Ccircle%20cx='18'%20cy='126'%20r='22'/%3E%3Ccircle%20cx='130'%20cy='178'%20r='26'/%3E%3Ccircle%20cx='130'%20cy='14'%20r='22'/%3E%3C/g%3E%3Cg%20fill='%23ffffff'%20fill-opacity='0.4'%3E%3Ccircle%20cx='252'%20cy='70'%20r='5'/%3E%3Ccircle%20cx='6'%20cy='66'%20r='5'/%3E%3Ccircle%20cx='60'%20cy='185'%20r='4'/%3E%3Ccircle%20cx='205'%20cy='183'%20r='4'/%3E%3C/g%3E%3C/svg%3E") no-repeat center / 145% 160%;
-    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.45), 0 0 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.55), 0 0 3px rgba(0, 0, 0, 0.4);
     animation: rise 0.9s ease both;
     transition: transform 0.5s ease;
+}
+
+/* macchia / splash traslucida dietro il titolo */
+.hero h1::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 165%;
+    height: 260%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.3;
+    background: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20170'%3E%3Cdefs%3E%3Cfilter%20id='s'%20x='-30%25'%20y='-45%25'%20width='160%25'%20height='190%25'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.014%200.03'%20numOctaves='4'%20seed='5'%20result='n'/%3E%3CfeDisplacementMap%20in='SourceGraphic'%20in2='n'%20scale='56'%20xChannelSelector='R'%20yChannelSelector='G'/%3E%3C/filter%3E%3C/defs%3E%3Cg%20fill='%23ffffff'%20filter='url(%23s)'%3E%3Cellipse%20cx='150'%20cy='85'%20rx='138'%20ry='70'/%3E%3Cellipse%20cx='150'%20cy='85'%20rx='92'%20ry='92'/%3E%3Ccircle%20cx='26'%20cy='26'%20r='26'/%3E%3Ccircle%20cx='274'%20cy='24'%20r='26'/%3E%3Ccircle%20cx='284'%20cy='128'%20r='24'/%3E%3Ccircle%20cx='20'%20cy='132'%20r='24'/%3E%3Ccircle%20cx='150'%20cy='158'%20r='28'/%3E%3Ccircle%20cx='150'%20cy='10'%20r='22'/%3E%3C/g%3E%3Cg%20fill='%23ffffff'%3E%3Ccircle%20cx='292'%20cy='72'%20r='6'/%3E%3Ccircle%20cx='8'%20cy='70'%20r='6'/%3E%3Ccircle%20cx='70'%20cy='164'%20r='5'/%3E%3Ccircle%20cx='232'%20cy='162'%20r='5'/%3E%3C/g%3E%3C/svg%3E") no-repeat center / 100% 100%;
 }
 
 .hero h1:hover {
