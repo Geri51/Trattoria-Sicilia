@@ -4,14 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reservieren | Trattoria Pizzeria Sicilia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1><a href="index.html">Trattoria Pizzeria Sicilia</a></h1>
-    <nav>
+<header class="site-header">
+    <a class="brand" href="index.html">Trattoria Sicilia</a>
+    <nav class="site-nav">
         <a href="index.html">Home</a>
         <a href="speisekarte.html">Speisekarte</a>
         <a href="menu.html">Menu</a>
@@ -22,56 +25,74 @@
 </header>
 
 
-<section class="page">
-    <h2>Tisch reservieren</h2>
-    <p class="hint">
-        Füllen Sie das Formular aus &ndash; Ihre Anfrage wird per WhatsApp an das
-        Restaurant gesendet. Wir bestätigen Ihren Tisch telefonisch oder per WhatsApp.
-    </p>
+<main>
+<section class="section">
+    <div class="wrap narrow">
+        <span class="kicker">Reservieren</span>
+        <h2>Tisch reservieren</h2>
+        <p class="lead">
+            Formular ausfüllen — Ihre Anfrage wird per WhatsApp an das Restaurant
+            gesendet. Wir bestätigen Ihren Tisch telefonisch oder per WhatsApp.
+        </p>
 
-    <form id="reservation-form">
-        <div class="form-row">
-            <label>Name
-                <input type="text" name="name" required>
-            </label>
-            <label>E-Mail
-                <input type="email" name="email">
-            </label>
-        </div>
-        <div class="form-row">
-            <label>Telefon
-                <input type="tel" name="telefon" required>
-            </label>
-            <label>Anzahl der Personen
-                <input type="number" name="personen" min="1" max="20" value="2" required>
-            </label>
-        </div>
-        <div class="form-row">
-            <label>Datum
-                <input type="date" name="datum" required>
-            </label>
-            <label>Uhrzeit
-                <input type="time" name="uhrzeit" required>
-            </label>
-        </div>
-        <label>Anmerkungen (Allergien, besondere Anlässe &hellip;)
-            <textarea name="anmerkungen" rows="3"></textarea>
-        </label>
+        <form id="reservation-form" class="form">
+            <div class="form-row">
+                <div class="field">
+                    <label>Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="field">
+                    <label>E-Mail</label>
+                    <input type="email" name="email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="field">
+                    <label>Telefon</label>
+                    <input type="tel" name="telefon" required>
+                </div>
+                <div class="field">
+                    <label>Personen</label>
+                    <input type="number" name="personen" min="1" max="20" value="2" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="field">
+                    <label>Datum</label>
+                    <input type="date" name="datum" required>
+                </div>
+                <div class="field">
+                    <label>Uhrzeit</label>
+                    <input type="time" name="uhrzeit" required>
+                </div>
+            </div>
+            <div class="field">
+                <label>Anmerkungen (Allergien, besondere Anlässe …)</label>
+                <textarea name="anmerkungen" rows="3"></textarea>
+            </div>
 
-        <button type="submit" id="submit-btn" class="button">Anfrage per WhatsApp senden</button>
-    </form>
+            <button type="submit" class="btn">Anfrage per WhatsApp senden</button>
+        </form>
 
-    <div id="form-message"></div>
+        <div id="form-message"></div>
 
-    <p class="hint" style="margin-top:24px;">
-        Lieber direkt anrufen? &nbsp;📞 <a href="tel:+4923326660888">+49 2332 6660888</a>
-    </p>
+        <p class="muted" style="margin-top:24px;">
+            Lieber direkt anrufen? <a href="tel:+4923326660888">+49 2332 6660888</a>
+        </p>
+    </div>
 </section>
+</main>
 
 
-<footer>
-    <p>&copy; Trattoria Pizzeria Sicilia &mdash; Rosendahler Straße 12, 58285 Gevelsberg</p>
-    <p><a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a></p>
+<footer class="site-footer">
+    <div class="wrap">
+        <span>&copy; Trattoria Pizzeria Sicilia &middot; Rosendahler Straße 12, 58285 Gevelsberg</span>
+        <span>
+            <a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a>
+            &nbsp;&nbsp;
+            <a href="https://wa.me/4923326660888" target="_blank" rel="noopener">WhatsApp</a>
+        </span>
+    </div>
 </footer>
 
 

@@ -4,14 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trattoria Pizzeria Sicilia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1><a href="index.html">Trattoria Pizzeria Sicilia</a></h1>
-    <nav>
+<header class="site-header">
+    <a class="brand" href="index.html">Trattoria Sicilia</a>
+    <nav class="site-nav">
         <a href="index.html" class="active">Home</a>
         <a href="speisekarte.html">Speisekarte</a>
         <a href="menu.html">Menu</a>
@@ -23,35 +26,79 @@
 
 
 <section class="hero">
-    <div class="overlay"></div>
-    <h2>Willkommen bei Trattoria Pizzeria Sicilia</h2>
-    <p>Italienische Küche mit Tradition</p>
-    <img src="pizza.jpg" alt="Pizza italiana">
+    <div class="hero-inner">
+        <span class="kicker">Pizzeria &middot; Gevelsberg</span>
+        <h1>Italienische Küche mit Tradition</h1>
+        <p>Pizza aus dem Steinofen, hausgemachte Pasta und Klassiker aus Sizilien.</p>
+        <div class="btn-row">
+            <a class="btn" href="prenota.html">Tisch reservieren</a>
+            <a class="btn ghost" href="speisekarte.html">Zur Speisekarte</a>
+        </div>
+    </div>
 </section>
 
 
-<section class="kontakt">
-    <h2>Kontakt</h2>
-    <p>📞 Telefon: +49 2332 6660888</p>
-    <p>📧 E-Mail: b.brancato@hotmail.de</p>
+<section class="section alt">
+    <div class="wrap">
+        <span class="kicker">Was uns ausmacht</span>
+        <h2>Einfach, frisch, italienisch</h2>
+        <p class="lead">In Gevelsberg kochen wir mit dem, was zählt: gute Zutaten, ein heißer Ofen und Rezepte aus der Familie.</p>
 
-    <h3>Adresse</h3>
-    <p>
-        Trattoria Pizzeria Sicilia<br>
-        Rosendahler Straße 12<br>
-        58285 Gevelsberg
-    </p>
-
-    <a class="button" href="https://wa.me/4923326660888" target="_blank" rel="noopener">
-        Nachricht schreiben (WhatsApp)
-    </a>
-    <a class="button" href="prenota.html">Tisch reservieren</a>
+        <div class="pillars">
+            <div class="pillar">
+                <span class="num">01</span>
+                <h3>Steinofen-Pizza</h3>
+                <p>Dünner Boden, Tomatensauce, Käse und Oregano — über 40 Sorten.</p>
+            </div>
+            <div class="pillar">
+                <span class="num">02</span>
+                <h3>Hausgemachte Pasta</h3>
+                <p>Spaghetti, Penne, Bandnudeln, Gnocchi und Tortellini mit klassischen Saucen.</p>
+            </div>
+            <div class="pillar">
+                <span class="num">03</span>
+                <h3>Sizilianische Klassiker</h3>
+                <p>Überbackene Gerichte, frische Salate und Dolci wie Tiramisu.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 
-<footer>
-    <p>&copy; Trattoria Pizzeria Sicilia &mdash; Rosendahler Straße 12, 58285 Gevelsberg</p>
-    <p><a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a></p>
+<div class="band" style="background-image:url('pizza.jpg')"></div>
+
+
+<section class="section" id="kontakt">
+    <div class="wrap narrow">
+        <span class="kicker">Kontakt</span>
+        <h2>Reservieren &amp; finden</h2>
+
+        <div class="contact-big">
+            <a class="phone" href="tel:+4923326660888">+49 2332 6660888</a>
+        </div>
+        <address>
+            Trattoria Pizzeria Sicilia<br>
+            Rosendahler Straße 12, 58285 Gevelsberg<br>
+            <a href="mailto:b.brancato@hotmail.de">b.brancato@hotmail.de</a>
+        </address>
+
+        <div class="btn-row">
+            <a class="btn" href="prenota.html">Tisch reservieren</a>
+            <a class="btn ghost" href="https://wa.me/4923326660888" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+
+<footer class="site-footer">
+    <div class="wrap">
+        <span>&copy; Trattoria Pizzeria Sicilia &middot; Rosendahler Straße 12, 58285 Gevelsberg</span>
+        <span>
+            <a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a>
+            &nbsp;&nbsp;
+            <a href="https://wa.me/4923326660888" target="_blank" rel="noopener">WhatsApp</a>
+        </span>
+    </div>
 </footer>
 
 </body>

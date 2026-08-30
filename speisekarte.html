@@ -4,14 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Speisekarte | Trattoria Pizzeria Sicilia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1><a href="index.html">Trattoria Pizzeria Sicilia</a></h1>
-    <nav>
+<header class="site-header">
+    <a class="brand" href="index.html">Trattoria Sicilia</a>
+    <nav class="site-nav">
         <a href="index.html">Home</a>
         <a href="speisekarte.html" class="active">Speisekarte</a>
         <a href="menu.html">Menu</a>
@@ -22,37 +25,45 @@
 </header>
 
 
-<section class="page">
-    <h2>Speisekarte</h2>
-    <p class="hint">
-        Unsere vollständige Karte. Zum Vergrößern auf ein Bild tippen.
-        Alle Pizzen werden mit Tomatensauce, Käse und Oregano serviert.
-    </p>
+<main>
+<section class="section">
+    <div class="wrap">
+        <span class="kicker">Speisekarte</span>
+        <h2>Die vollständige Karte</h2>
+        <p class="lead">Zum Vergrößern auf ein Bild tippen. Alle Pizzen werden mit Tomatensauce, Käse und Oregano serviert.</p>
 
-    <div class="menu-scans">
-        <a href="Imagines/speisekarte-1.avif" target="_blank" rel="noopener">
-            <img src="Imagines/speisekarte-1.avif" alt="Speisekarte – Pizza (Teil 1)" loading="lazy">
-        </a>
-        <a href="Imagines/speisekarte-2.avif" target="_blank" rel="noopener">
-            <img src="Imagines/speisekarte-2.avif" alt="Speisekarte – Pizza (Teil 2) und Extrabeilagen" loading="lazy">
-        </a>
-        <a href="Imagines/speisekarte-3.avif" target="_blank" rel="noopener">
-            <img src="Imagines/speisekarte-3.avif" alt="Speisekarte – Nudelgerichte" loading="lazy">
-        </a>
-        <a href="Imagines/speisekarte-4.avif" target="_blank" rel="noopener">
-            <img src="Imagines/speisekarte-4.avif" alt="Speisekarte – Gnocchi, Überbackenes und Salate" loading="lazy">
-        </a>
+        <div class="scans">
+            <a href="Imagines/speisekarte-1.avif" target="_blank" rel="noopener">
+                <img src="Imagines/speisekarte-1.avif" alt="Speisekarte – Pizza (Teil 1)" loading="lazy">
+            </a>
+            <a href="Imagines/speisekarte-2.avif" target="_blank" rel="noopener">
+                <img src="Imagines/speisekarte-2.avif" alt="Speisekarte – Pizza (Teil 2) und Extrabeilagen" loading="lazy">
+            </a>
+            <a href="Imagines/speisekarte-3.avif" target="_blank" rel="noopener">
+                <img src="Imagines/speisekarte-3.avif" alt="Speisekarte – Nudelgerichte" loading="lazy">
+            </a>
+            <a href="Imagines/speisekarte-4.avif" target="_blank" rel="noopener">
+                <img src="Imagines/speisekarte-4.avif" alt="Speisekarte – Gnocchi, Überbackenes und Salate" loading="lazy">
+            </a>
+        </div>
+
+        <p class="muted" style="margin-top:26px;">
+            Fragen zu Allergenen oder Wünsche? <a href="tel:+4923326660888">+49 2332 6660888</a>
+        </p>
     </div>
-
-    <p class="hint" style="margin-top:24px;">
-        Fragen zu Allergenen oder Wünsche? &nbsp;📞 <a href="tel:+4923326660888">+49 2332 6660888</a>
-    </p>
 </section>
+</main>
 
 
-<footer>
-    <p>&copy; Trattoria Pizzeria Sicilia &mdash; Rosendahler Straße 12, 58285 Gevelsberg</p>
-    <p><a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a></p>
+<footer class="site-footer">
+    <div class="wrap">
+        <span>&copy; Trattoria Pizzeria Sicilia &middot; Rosendahler Straße 12, 58285 Gevelsberg</span>
+        <span>
+            <a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a>
+            &nbsp;&nbsp;
+            <a href="https://wa.me/4923326660888" target="_blank" rel="noopener">WhatsApp</a>
+        </span>
+    </div>
 </footer>
 
 </body>
