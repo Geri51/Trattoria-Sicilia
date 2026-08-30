@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservieren | Trattoria Pizzeria Sicilia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1><a href="index.html">Trattoria Pizzeria Sicilia</a></h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="speisekarte.html">Speisekarte</a>
+        <a href="menu.html">Menu</a>
+        <a href="social.html">Social</a>
+        <a href="info.html">Info</a>
+        <a href="prenota.html" class="active">Reservieren</a>
+    </nav>
+</header>
+
+
+<section class="page">
+    <h2>Tisch reservieren</h2>
+    <p class="hint">
+        Füllen Sie das Formular aus &ndash; Ihre Anfrage wird per WhatsApp an das
+        Restaurant gesendet. Wir bestätigen Ihren Tisch telefonisch oder per WhatsApp.
+    </p>
+
+    <form id="reservation-form">
+        <div class="form-row">
+            <label>Name
+                <input type="text" name="name" required>
+            </label>
+            <label>E-Mail
+                <input type="email" name="email">
+            </label>
+        </div>
+        <div class="form-row">
+            <label>Telefon
+                <input type="tel" name="telefon" required>
+            </label>
+            <label>Anzahl der Personen
+                <input type="number" name="personen" min="1" max="20" value="2" required>
+            </label>
+        </div>
+        <div class="form-row">
+            <label>Datum
+                <input type="date" name="datum" required>
+            </label>
+            <label>Uhrzeit
+                <input type="time" name="uhrzeit" required>
+            </label>
+        </div>
+        <label>Anmerkungen (Allergien, besondere Anlässe &hellip;)
+            <textarea name="anmerkungen" rows="3"></textarea>
+        </label>
+
+        <button type="submit" id="submit-btn" class="button">Anfrage per WhatsApp senden</button>
+    </form>
+
+    <div id="form-message"></div>
+
+    <p class="hint" style="margin-top:24px;">
+        Lieber direkt anrufen? &nbsp;📞 <a href="tel:+4923326660888">+49 2332 6660888</a>
+    </p>
+</section>
+
+
+<footer>
+    <p>&copy; Trattoria Pizzeria Sicilia &mdash; Rosendahler Straße 12, 58285 Gevelsberg</p>
+    <p><a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a></p>
+</footer>
+
+
+<script>
+    (function () {
+        var WHATSAPP_NUMBER = "4923326660888"; // Restaurant, internationales Format ohne +
+        var form = document.getElementById("reservation-form");
+        var msgBox = document.getElementById("form-message");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            var data = new FormData(form);
+            var personen = parseInt(data.get("personen"), 10);
+            if (!Number.isInteger(personen) || personen < 1 || personen > 20) {
+                msgBox.className = "error";
+                msgBox.textContent = "Bitte eine gültige Personenzahl zwischen 1 und 20 angeben.";
+                return;
+            }
+
+            var lines = [
+                "Neue Reservierungsanfrage",
+                "Name: " + (data.get("name") || "").trim(),
+                "Telefon: " + (data.get("telefon") || "").trim(),
+                "E-Mail: " + ((data.get("email") || "").trim() || "-"),
+                "Personen: " + personen,
+                "Datum: " + data.get("datum"),
+                "Uhrzeit: " + data.get("uhrzeit")
+            ];
+            var note = (data.get("anmerkungen") || "").trim();
+            if (note) lines.push("Anmerkungen: " + note);
+
+            var url = "https://wa.me/" + WHATSAPP_NUMBER +
+                      "?text=" + encodeURIComponent(lines.join("\n"));
+
+            window.open(url, "_blank", "noopener");
+
+            msgBox.className = "success";
+            msgBox.textContent = "WhatsApp wurde geöffnet. Bitte senden Sie die vorbereitete " +
+                                 "Nachricht ab, um Ihre Reservierung anzufragen.";
+        });
+    })();
+</script>
+
+</body>
+</html>
