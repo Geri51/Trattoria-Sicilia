@@ -238,12 +238,12 @@ p {
     margin-top: 6px;
     padding: 14px 22px;
     color: var(--ink);
-    background: radial-gradient(
-        ellipse at center,
-        rgba(255, 255, 255, 0.78) 0%,
-        rgba(255, 255, 255, 0.45) 45%,
-        rgba(255, 255, 255, 0) 78%
-    );
+    background:
+        radial-gradient(ellipse 52% 68% at 28% 42%, rgba(255,255,255,0.72), rgba(255,255,255,0) 70%),
+        radial-gradient(ellipse 44% 58% at 68% 62%, rgba(255,255,255,0.62), rgba(255,255,255,0) 72%),
+        radial-gradient(ellipse 34% 46% at 82% 38%, rgba(255,255,255,0.5),  rgba(255,255,255,0) 75%),
+        radial-gradient(ellipse 30% 52% at 12% 66%, rgba(255,255,255,0.48), rgba(255,255,255,0) 76%),
+        radial-gradient(circle at 50% 30%, rgba(255,255,255,0.42), rgba(255,255,255,0) 60%);
     text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
     animation: rise 0.9s ease both;
     transition: transform 0.5s ease;
