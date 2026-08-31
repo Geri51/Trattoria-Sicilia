@@ -97,7 +97,7 @@ p {
     margin-bottom: 18px;
 }
 
-/* ---------- Kopfzeile / Navigation ---------- */
+
 
 .site-header {
     position: sticky;
@@ -252,17 +252,17 @@ p {
     z-index: -1;
     pointer-events: none;
     background: #fff;
-    opacity: 0.4;
+    opacity: 0.2;
     border-radius: 46% 54% 60% 40% / 54% 44% 56% 46%;
     filter: blur(2px);
     box-shadow:
-        -2.4em  0.2em 0 -1em    #fff,
+        -2.4em  0.2em 0 -3em    #fff,
          2.6em -0.7em 0 -1.05em #fff,
         -1.9em  1.4em 0 -1.15em #fff,
          2.2em  1.3em 0 -1.2em  #fff,
         -2.9em -0.9em 0 -1.3em  #fff,
          0.4em  1.9em 0 -1.3em  #fff;
-}-
+}
 
 .hero h1:hover {
     transform: translateY(-6px);
