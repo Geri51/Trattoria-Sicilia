@@ -6,51 +6,47 @@
 <title>Social | Trattoria Pizzeria Sicilia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Petit+Formal+Script&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="site-header">
-    <a class="brand" href="index.html">Trattoria Sicilia</a>
-    <nav class="site-nav">
-        <a href="index.html">Home</a>
-        <a href="speisekarte.html">Speisekarte</a>
-        <a href="menu.html">Menu</a>
-        <a href="social.html" class="active">Social</a>
-        <a href="info.html">Info</a>
-        <a href="prenota.html">Reservieren</a>
-    </nav>
+  <a class="brand" href="index.html">Trattoria Pizzeria Sicilia</a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="speisekarte.html">Speisekarte</a>
+    <a href="menu.html">Menu</a>
+    <a href="social.html" class="active">Social</a>
+    <a href="info.html">Info</a>
+    <a href="prenota.html">Reservieren</a>
+  </nav>
 </header>
 
+<main class="subpage">
+<section class="panel narrow">
+  <span class="kicker">Social</span>
+  <h2>Folgen &amp; schreiben</h2>
+  <p class="lead">Neuigkeiten und Angebote auf Facebook — oder schreiben Sie uns direkt per WhatsApp.</p>
 
-<main>
-<section class="section">
-    <div class="wrap narrow">
-        <span class="kicker">Social</span>
-        <h2>Folgen &amp; schreiben</h2>
-        <p class="lead">Neuigkeiten und Angebote auf Facebook — oder schreiben Sie uns direkt per WhatsApp.</p>
-
-        <div class="btn-row">
-            <a class="btn" href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a>
-            <a class="btn ghost" href="https://wa.me/4923326660888" target="_blank" rel="noopener">WhatsApp</a>
-        </div>
-    </div>
+  <div class="btn-row">
+    <a class="btn" href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a>
+    <a class="btn ghost" href="https://wa.me/4923326660888" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
 </section>
 </main>
 
-
 <footer class="site-footer">
-    <div class="wrap">
-        <span>&copy; Trattoria Pizzeria Sicilia &middot; Rosendahler Straße 12, 58285 Gevelsberg</span>
-        <span>
-            <a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a>
-            &nbsp;&nbsp;
-            <a href="https://wa.me/4923326660888" target="_blank" rel="noopener">WhatsApp</a>
-        </span>
-    </div>
+  <span>&copy; Trattoria Pizzeria Sicilia &middot; Rosendahler Straße 12, 58285 Gevelsberg</span>
+  <span><a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a> &nbsp; <a href="https://wa.me/4923326660888" target="_blank" rel="noopener">WhatsApp</a></span>
 </footer>
+
+<script>
+  var h=document.querySelector('.site-header');
+  var f=function(){h.classList.toggle('scrolled',window.scrollY>40);};
+  f();addEventListener('scroll',f,{passive:true});
+</script>
 
 </body>
 </html>

@@ -6,135 +6,94 @@
 <title>Reservieren | Trattoria Pizzeria Sicilia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Petit+Formal+Script&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="site-header">
-    <a class="brand" href="index.html">Trattoria Sicilia</a>
-    <nav class="site-nav">
-        <a href="index.html">Home</a>
-        <a href="speisekarte.html">Speisekarte</a>
-        <a href="menu.html">Menu</a>
-        <a href="social.html">Social</a>
-        <a href="info.html">Info</a>
-        <a href="prenota.html" class="active">Reservieren</a>
-    </nav>
+  <a class="brand" href="index.html">Trattoria Pizzeria Sicilia</a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="speisekarte.html">Speisekarte</a>
+    <a href="menu.html">Menu</a>
+    <a href="social.html">Social</a>
+    <a href="info.html">Info</a>
+    <a href="prenota.html" class="active">Reservieren</a>
+  </nav>
 </header>
 
+<main class="subpage">
+<section class="panel narrow">
+  <span class="kicker">Reservieren</span>
+  <h2>Tisch reservieren</h2>
+  <p class="lead">Formular ausfüllen — Ihre Anfrage wird per WhatsApp an das Restaurant gesendet. Wir bestätigen Ihren Tisch telefonisch oder per WhatsApp.</p>
 
-<main>
-<section class="section">
-    <div class="wrap narrow">
-        <span class="kicker">Reservieren</span>
-        <h2>Tisch reservieren</h2>
-        <p class="lead">
-            Formular ausfüllen — Ihre Anfrage wird per WhatsApp an das Restaurant
-            gesendet. Wir bestätigen Ihren Tisch telefonisch oder per WhatsApp.
-        </p>
-
-        <form id="reservation-form" class="form">
-            <div class="form-row">
-                <div class="field">
-                    <label>Name</label>
-                    <input type="text" name="name" required>
-                </div>
-                <div class="field">
-                    <label>E-Mail</label>
-                    <input type="email" name="email">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="field">
-                    <label>Telefon</label>
-                    <input type="tel" name="telefon" required>
-                </div>
-                <div class="field">
-                    <label>Personen</label>
-                    <input type="number" name="personen" min="1" max="20" value="2" required>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="field">
-                    <label>Datum</label>
-                    <input type="date" name="datum" required>
-                </div>
-                <div class="field">
-                    <label>Uhrzeit</label>
-                    <input type="time" name="uhrzeit" required>
-                </div>
-            </div>
-            <div class="field">
-                <label>Anmerkungen (Allergien, besondere Anlässe …)</label>
-                <textarea name="anmerkungen" rows="3"></textarea>
-            </div>
-
-            <button type="submit" class="btn">Anfrage per WhatsApp senden</button>
-        </form>
-
-        <div id="form-message"></div>
-
-        <p class="muted" style="margin-top:24px;">
-            Lieber direkt anrufen? <a href="tel:+4923326660888">+49 2332 6660888</a>
-        </p>
+  <form id="reservation-form" class="form">
+    <div class="form-row">
+      <div class="field"><label>Name</label><input type="text" name="name" required></div>
+      <div class="field"><label>E-Mail</label><input type="email" name="email"></div>
     </div>
+    <div class="form-row">
+      <div class="field"><label>Telefon</label><input type="tel" name="telefon" required></div>
+      <div class="field"><label>Personen</label><input type="number" name="personen" min="1" max="20" value="2" required></div>
+    </div>
+    <div class="form-row">
+      <div class="field"><label>Datum</label><input type="date" name="datum" required></div>
+      <div class="field"><label>Uhrzeit</label><input type="time" name="uhrzeit" required></div>
+    </div>
+    <div class="field"><label>Anmerkungen (Allergien, besondere Anlässe …)</label><textarea name="anmerkungen" rows="3"></textarea></div>
+
+    <button type="submit" class="btn">Anfrage per WhatsApp senden</button>
+  </form>
+
+  <div id="form-message"></div>
+
+  <p class="muted" style="margin-top:24px;">Lieber direkt anrufen? <a href="tel:+4923326660888">+49 2332 6660888</a></p>
 </section>
 </main>
 
-
 <footer class="site-footer">
-    <div class="wrap">
-        <span>&copy; Trattoria Pizzeria Sicilia &middot; Rosendahler Straße 12, 58285 Gevelsberg</span>
-        <span>
-            <a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a>
-            &nbsp;&nbsp;
-            <a href="https://wa.me/4923326660888" target="_blank" rel="noopener">WhatsApp</a>
-        </span>
-    </div>
+  <span>&copy; Trattoria Pizzeria Sicilia &middot; Rosendahler Straße 12, 58285 Gevelsberg</span>
+  <span><a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a> &nbsp; <a href="https://wa.me/4923326660888" target="_blank" rel="noopener">WhatsApp</a></span>
 </footer>
 
-
 <script>
-    (function () {
-        var WHATSAPP_NUMBER = "4923326660888"; // Restaurant, internationales Format ohne +
-        var form = document.getElementById("reservation-form");
-        var msgBox = document.getElementById("form-message");
+  var h=document.querySelector('.site-header');
+  var f=function(){h.classList.toggle('scrolled',window.scrollY>40);};
+  f();addEventListener('scroll',f,{passive:true});
 
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            var data = new FormData(form);
-            var personen = parseInt(data.get("personen"), 10);
-            if (!Number.isInteger(personen) || personen < 1 || personen > 20) {
-                msgBox.className = "error";
-                msgBox.textContent = "Bitte eine gültige Personenzahl zwischen 1 und 20 angeben.";
-                return;
-            }
-
-            var lines = [
-                "Neue Reservierungsanfrage",
-                "Name: " + (data.get("name") || "").trim(),
-                "Telefon: " + (data.get("telefon") || "").trim(),
-                "E-Mail: " + ((data.get("email") || "").trim() || "-"),
-                "Personen: " + personen,
-                "Datum: " + data.get("datum"),
-                "Uhrzeit: " + data.get("uhrzeit")
-            ];
-            var note = (data.get("anmerkungen") || "").trim();
-            if (note) lines.push("Anmerkungen: " + note);
-
-            var url = "https://wa.me/" + WHATSAPP_NUMBER +
-                      "?text=" + encodeURIComponent(lines.join("\n"));
-
-            window.open(url, "_blank", "noopener");
-
-            msgBox.className = "success";
-            msgBox.textContent = "WhatsApp wurde geöffnet. Bitte senden Sie die vorbereitete " +
-                                 "Nachricht ab, um Ihre Reservierung anzufragen.";
-        });
-    })();
+  (function () {
+    var WHATSAPP_NUMBER = "4923326660888";
+    var form = document.getElementById("reservation-form");
+    var msgBox = document.getElementById("form-message");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      var personen = parseInt(data.get("personen"), 10);
+      if (!Number.isInteger(personen) || personen < 1 || personen > 20) {
+        msgBox.className = "error";
+        msgBox.textContent = "Bitte eine gültige Personenzahl zwischen 1 und 20 angeben.";
+        return;
+      }
+      var lines = [
+        "Neue Reservierungsanfrage",
+        "Name: " + (data.get("name") || "").trim(),
+        "Telefon: " + (data.get("telefon") || "").trim(),
+        "E-Mail: " + ((data.get("email") || "").trim() || "-"),
+        "Personen: " + personen,
+        "Datum: " + data.get("datum"),
+        "Uhrzeit: " + data.get("uhrzeit")
+      ];
+      var note = (data.get("anmerkungen") || "").trim();
+      if (note) lines.push("Anmerkungen: " + note);
+      var url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(lines.join("\n"));
+      window.open(url, "_blank", "noopener");
+      msgBox.className = "success";
+      msgBox.textContent = "WhatsApp wurde geöffnet. Bitte senden Sie die vorbereitete Nachricht ab, um Ihre Reservierung anzufragen.";
+    });
+  })();
 </script>
 
 </body>
