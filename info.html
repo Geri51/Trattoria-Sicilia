@@ -10,14 +10,17 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="page-info">
 
 <header class="site-header">
   <a class="brand" href="index.html">Trattoria Pizzeria Sicilia</a>
   <nav class="site-nav">
     <a href="index.html">Home</a>
+    <a href="ueber-uns.html">Über uns</a>
     <a href="speisekarte.html">Speisekarte</a>
     <a href="menu.html">Menu</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="presse.html">Presse</a>
     <a href="social.html">Social</a>
     <a href="info.html" class="active">Info</a>
     <a href="prenota.html">Reservieren</a>
@@ -25,41 +28,72 @@
 </header>
 
 <main class="subpage">
-<section class="panel narrow">
+<section class="panel">
   <span class="kicker">Info</span>
-  <h2>Kontakt &amp; Öffnungszeiten</h2>
+  <h2>Öffnungszeiten &amp; Anfahrt</h2>
 
-  <div class="menu-group">
-    <h3>Adresse</h3>
-    <div class="menu-row"><span class="name">Rosendahler Straße 12, 58285 Gevelsberg</span></div>
-  </div>
+  <div class="info-grid">
 
-  <div class="menu-group">
-    <h3>Kontakt</h3>
-    <div class="menu-row">
-      <span class="name">Telefon</span>
-      <span class="price"><a href="tel:+4923326660888">+49 2332 6660888</a></span>
+    <div class="info-hours">
+      <h3>Öffnungszeiten</h3>
+      <table class="hours">
+        <tr><th>Montag</th><td class="closed">Ruhetag</td></tr>
+        <tr><th>Dienstag</th><td>11:00 – 14:00 &nbsp;·&nbsp; 17:00 – 22:00</td></tr>
+        <tr><th>Mittwoch</th><td>11:00 – 14:00 &nbsp;·&nbsp; 17:00 – 23:00</td></tr>
+        <tr><th>Donnerstag</th><td>11:00 – 14:00 &nbsp;·&nbsp; 17:00 – 23:00</td></tr>
+        <tr><th>Freitag</th><td>11:00 – 14:00 &nbsp;·&nbsp; 17:00 – 23:00</td></tr>
+        <tr><th>Samstag</th><td>11:00 – 14:00 &nbsp;·&nbsp; 17:00 – 23:00</td></tr>
+        <tr><th>Sonntag</th><td>11:00 – 14:00 &nbsp;·&nbsp; 17:00 – 22:00</td></tr>
+      </table>
+      <p class="info-note">Angaben laut Online-Eintrag – an Feiertagen können die Zeiten abweichen.</p>
     </div>
-    <div class="menu-row">
-      <span class="name">E-Mail</span>
-      <span class="price"><a href="mailto:b.brancato@hotmail.de">b.brancato@hotmail.de</a></span>
+
+    <div class="info-contact">
+      <div class="info-block">
+        <h3>Kontakt</h3>
+        <p><span class="lbl">Telefon</span>
+          <a href="tel:+4923326660888">+49 2332 6660888</a><br>
+          <a href="tel:+4923326659977">+49 2332 6659977</a><br>
+          <a href="tel:+4923326659988">+49 2332 6659988</a></p>
+        <p><span class="lbl">WhatsApp</span><a href="https://wa.me/491792398447" target="_blank" rel="noopener">Nachricht schreiben</a></p>
+        <p><span class="lbl">E-Mail</span><a href="mailto:b.brancato@hotmail.de">b.brancato@hotmail.de</a></p>
+        <p><span class="lbl">Web</span><a href="https://trattoria.gealoalor.com">trattoria.gealoalor.com</a></p>
+      </div>
+
+      <div class="info-block">
+        <h3>Adresse</h3>
+        <address>
+          Trattoria Pizzeria Sicilia<br>
+          Rosendahler Straße 12<br>
+          58285 Gevelsberg
+        </address>
+        <div class="btn-row">
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rosendahler+Stra%C3%9Fe+12%2C+58285+Gevelsberg" target="_blank" rel="noopener">Route planen</a>
+          <a class="btn ghost" href="prenota.html">Tisch reservieren</a>
+        </div>
+      </div>
     </div>
+
   </div>
 
-  <div class="menu-group">
-    <h3>Öffnungszeiten</h3>
-    <div class="menu-row"><span class="name">Bitte Öffnungszeiten eintragen</span><span class="price">—</span></div>
+  <div class="info-map">
+    <iframe title="Karte — Trattoria Pizzeria Sicilia, Gevelsberg"
+      src="https://www.google.com/maps?q=Rosendahler%20Stra%C3%9Fe%2012%2C%2058285%20Gevelsberg&amp;z=16&amp;output=embed"
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
-  <div class="btn-row">
-    <a class="btn" href="prenota.html">Tisch reservieren</a>
+  <div class="info-anfahrt">
+    <h3>So finden Sie uns</h3>
+    <p>Wir liegen zentral in Gevelsberg an der <strong>Rosendahler Straße 12</strong> – mitten im Ort und wenige Gehminuten vom Bahnhof Gevelsberg entfernt.</p>
+    <p><strong>Mit dem Auto:</strong> von der A1 bzw. A43 Richtung Gevelsberg-Zentrum. Parkplätze finden Sie in den umliegenden Straßen.</p>
+    <p><strong>Mit Bus &amp; Bahn:</strong> ab Bahnhof Gevelsberg zu Fuß in wenigen Minuten erreichbar.</p>
   </div>
 </section>
 </main>
 
 <footer class="site-footer">
   <span>&copy; Trattoria Pizzeria Sicilia &middot; Rosendahler Straße 12, 58285 Gevelsberg</span>
-  <span><a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a> &nbsp; <a href="https://wa.me/4923326660888" target="_blank" rel="noopener">WhatsApp</a></span>
+  <span><a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a> &nbsp; <a href="https://wa.me/491792398447" target="_blank" rel="noopener">WhatsApp</a></span>
 </footer>
 
 <script>

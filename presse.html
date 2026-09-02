@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presse | Trattoria Pizzeria Sicilia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Petit+Formal+Script&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">Trattoria Pizzeria Sicilia</a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="ueber-uns.html">Über uns</a>
+    <a href="speisekarte.html">Speisekarte</a>
+    <a href="menu.html">Menu</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="presse.html" class="active">Presse</a>
+    <a href="social.html">Social</a>
+    <a href="info.html">Info</a>
+    <a href="prenota.html">Reservieren</a>
+  </nav>
+</header>
+
+<main class="subpage">
+<section class="panel">
+  <span class="kicker">Presse</span>
+  <h2>Das sagen andere über uns</h2>
+  <p class="lead">Stimmen unserer Gäste – nachzulesen bei Google. Sie waren bei uns? Wir freuen uns über Ihre Bewertung.</p>
+
+  <div class="quotes">
+    <div class="quote">
+      <div class="stars">★★★★★</div>
+      <p>„Für mich die beste italienische Pizza! Alle sind super nett, das Essen wird schnell gemacht und geliefert – und es ist einfach super lecker. Wir bestellen immer wieder gerne dort.“</p>
+      <cite>— Antonia, Google</cite>
+    </div>
+    <div class="quote">
+      <div class="stars">★★★★★</div>
+      <p>„Pizza und Nudeln gegessen und war absolut begeistert! Alles ist frisch zubereitet und sehr lecker. Der Service ist freundlich und aufmerksam, und die Atmosphäre ist gemütlich und einladend. In Gevelsberg gibt es kein besseres italienisches Restaurant – hier stimmt einfach alles.“</p>
+      <cite>— İbrahim Var, Google</cite>
+    </div>
+    <div class="quote">
+      <div class="stars">★★★★★</div>
+      <p>„Heute Pizza bestellt. Endlich mal wieder echt leckere Pizzen, sehr heiß angeliefert und auch der Salat sehr, sehr gut. Volle Empfehlung.“</p>
+      <cite>— G. G., Local Guide (Google)</cite>
+    </div>
+    <div class="quote">
+      <div class="stars">★★★★★</div>
+      <p>„Als Gruppe mit 7 Personen dort gewesen – super zufrieden. Gutes, leckeres Essen und nette Leute, schönes familiäres Flair. Wir waren nur auf Durchreise, sonst würden wir sicher öfter wiederkommen. Weiter so ❤️“</p>
+      <cite>— Jörg Veeningen, Google</cite>
+    </div>
+    <div class="quote">
+      <div class="stars">★★★★★</div>
+      <p>„Sehr schönes Restaurant, toller Service und wirklich leckeres Essen. Wir kommen gerne wieder.“</p>
+      <cite>— Marco Zwick, Local Guide (Google)</cite>
+    </div>
+  </div>
+
+  <div class="btn-row">
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Trattoria+Pizzeria+Sicilia+Gevelsberg" target="_blank" rel="noopener">Auf Google bewerten</a>
+    <a class="btn ghost" href="https://www.tripadvisor.com/Restaurant_Review-g1085413-d19597721-Reviews-Restaurant_Trattoria_Sicilia-Gevelsberg_North_Rhine_Westphalia.html" target="_blank" rel="noopener">Auf Tripadvisor ansehen</a>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <span>&copy; Trattoria Pizzeria Sicilia &middot; Rosendahler Straße 12, 58285 Gevelsberg</span>
+  <span><a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a> &nbsp; <a href="https://wa.me/491792398447" target="_blank" rel="noopener">WhatsApp</a></span>
+</footer>
+
+<script>
+  var h=document.querySelector('.site-header');
+  var f=function(){h.classList.toggle('scrolled',window.scrollY>40);};
+  f();addEventListener('scroll',f,{passive:true});
+</script>
+
+</body>
+</html>

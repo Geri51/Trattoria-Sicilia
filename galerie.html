@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galerie | Trattoria Pizzeria Sicilia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Petit+Formal+Script&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">Trattoria Pizzeria Sicilia</a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="ueber-uns.html">Über uns</a>
+    <a href="speisekarte.html">Speisekarte</a>
+    <a href="menu.html">Menu</a>
+    <a href="galerie.html" class="active">Galerie</a>
+    <a href="presse.html">Presse</a>
+    <a href="social.html">Social</a>
+    <a href="info.html">Info</a>
+    <a href="prenota.html">Reservieren</a>
+  </nav>
+</header>
+
+<main class="subpage">
+<section class="panel">
+  <span class="kicker">Galerie</span>
+  <h2>Fotos &amp; Videos</h2>
+  <p class="lead">Ein Blick in unser Lokal, in die Küche und auf die Teller.</p>
+
+  <div class="gallery">
+    <figure><a href="Imagines/lokal.jpg" target="_blank" rel="noopener"><img src="Imagines/lokal.jpg" alt="Außenansicht der Trattoria Pizzeria Sicilia" loading="lazy"></a><figcaption>Unser Lokal</figcaption></figure>
+    <figure><a href="bg.jpg" target="_blank" rel="noopener"><img src="bg.jpg" alt="Innenraum" loading="lazy"></a><figcaption>Innenraum</figcaption></figure>
+    <figure><a href="Imagines/Pasquale.jpg" target="_blank" rel="noopener"><img src="Imagines/Pasquale.jpg" alt="In der Küche" loading="lazy"></a><figcaption>In der Küche</figcaption></figure>
+    <figure><a href="pizza.jpg" target="_blank" rel="noopener"><img src="pizza.jpg" alt="Pizza" loading="lazy"></a><figcaption>Frisch aus dem Ofen</figcaption></figure>
+    <!-- weitere Fotos hier ergänzen: <figure><a href="Imagines/DATEI.jpg" target="_blank"><img src="Imagines/DATEI.jpg" alt="…" loading="lazy"></a><figcaption>…</figcaption></figure> -->
+  </div>
+
+  <div class="gal-videos">
+    <h3>Videos</h3>
+    <div class="video-grid">
+      <div class="video-ph">Video hier einfügen –<br>Datei nach <code>/videos/</code> legen und als<br><code>&lt;video controls src="videos/…mp4"&gt;</code> einbinden</div>
+      <div class="video-ph">oder YouTube-/Facebook-Video<br>als &lt;iframe&gt; einbetten</div>
+    </div>
+  </div>
+
+  <div class="btn-row">
+    <a class="btn" href="prenota.html">Tisch reservieren</a>
+    <a class="btn ghost" href="speisekarte.html">Zur Speisekarte</a>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <span>&copy; Trattoria Pizzeria Sicilia &middot; Rosendahler Straße 12, 58285 Gevelsberg</span>
+  <span><a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a> &nbsp; <a href="https://wa.me/491792398447" target="_blank" rel="noopener">WhatsApp</a></span>
+</footer>
+
+<script>
+  var h=document.querySelector('.site-header');
+  var f=function(){h.classList.toggle('scrolled',window.scrollY>40);};
+  f();addEventListener('scroll',f,{passive:true});
+</script>
+
+</body>
+</html>
