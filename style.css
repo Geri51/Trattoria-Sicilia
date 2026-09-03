@@ -341,6 +341,29 @@ address{font-style:normal;color:var(--ink-soft);margin-top:6px;}
 #form-message.success{color:#1e6b3c;}
 #form-message.error{color:var(--accent-deep);}
 
+/* ---- bottone chat flottante (WhatsApp) ---- */
+.chat-fab{
+  position:fixed; right:clamp(14px,3vw,28px); bottom:clamp(14px,3vw,28px); z-index:60;
+  display:inline-flex; align-items:center; gap:9px;
+  padding:12px 20px 12px 16px; border-radius:999px;
+  font-family:"Petit Formal Script","Segoe Script",cursive; font-size:19px; line-height:1;
+  text-decoration:none; color:#fff;
+  background:#0a7d38; border:1px solid rgba(255,255,255,.35);
+  box-shadow:0 14px 30px rgba(10,125,56,.4), 0 0 0 4px rgba(10,125,56,.12);
+  transform:translateY(160%); opacity:0; pointer-events:none;
+  transition:transform .35s cubic-bezier(.2,.8,.2,1), opacity .35s ease, background .18s ease;
+}
+.chat-fab.show{ transform:translateY(0); opacity:1; pointer-events:auto; }
+.chat-fab:hover{ background:#0a6c31; }
+.chat-fab svg{ width:24px; height:24px; fill:currentColor; flex:0 0 auto; }
+@media (max-width:520px){
+  .chat-fab{ padding:14px; }
+  .chat-fab span{ display:none; }
+}
+@media (prefers-reduced-motion:reduce){
+  .chat-fab{ transition:opacity .2s ease; transform:none; }
+}
+
 /* ---- footer ---- */
 .site-footer{
   position:relative;

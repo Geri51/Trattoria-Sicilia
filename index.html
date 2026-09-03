@@ -61,6 +61,13 @@
   </div>
 </section>
 
+<a class="chat-fab" href="https://wa.me/491792398447" target="_blank" rel="noopener" aria-label="Per WhatsApp schreiben">
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M17.47 14.38c-.29-.14-1.7-.84-1.96-.94-.26-.1-.45-.14-.64.15-.19.29-.74.94-.9 1.13-.17.19-.33.21-.62.07-.29-.15-1.23-.45-2.34-1.44-.86-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.64-1.56-.89-2.13-.23-.56-.47-.48-.64-.49l-.55-.01c-.19 0-.5.07-.76.36-.26.29-1 .98-1 2.4 0 1.42 1.03 2.79 1.17 2.98.14.19 2.02 3.09 4.9 4.33.68.3 1.22.47 1.64.6.69.22 1.31.19 1.81.12.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.33zM12.04 20.13h-.01a8.4 8.4 0 0 1-4.28-1.17l-.31-.18-3.18.83.85-3.1-.2-.32a8.35 8.35 0 0 1-1.28-4.46 8.4 8.4 0 0 1 14.34-5.93 8.35 8.35 0 0 1 2.46 5.93c0 4.63-3.77 8.4-8.41 8.4zM18.05 3.9A11.76 11.76 0 0 0 .23 17.86L0 24l6.3-1.65a11.75 11.75 0 0 0 5.74 1.46h.01C18.54 23.81 24 18.35 24 11.66a11.7 11.7 0 0 0-3.44-8.35z"/>
+  </svg>
+  <span>Chat</span>
+</a>
+
 <footer class="site-footer">
   <span>&copy; Trattoria Pizzeria Sicilia &middot; Rosendahler Straße 12, 58285 Gevelsberg</span>
   <span><a href="https://www.facebook.com/PizzeriaSicilia/" target="_blank" rel="noopener">Facebook</a> &nbsp; <a href="https://wa.me/491792398447" target="_blank" rel="noopener">WhatsApp</a></span>
@@ -69,7 +76,12 @@
 
 <script>
   var h=document.querySelector('.site-header');
-  var f=function(){h.classList.toggle('scrolled',window.scrollY>40);};
+  var c=document.querySelector('.chat-fab');
+  var f=function(){
+    var y=window.scrollY;
+    h.classList.toggle('scrolled',y>40);
+    if(c)c.classList.toggle('show',y>240);
+  };
   f();addEventListener('scroll',f,{passive:true});
 </script>
 
