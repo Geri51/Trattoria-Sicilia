@@ -318,6 +318,7 @@ address{font-style:normal;color:var(--ink-soft);margin-top:6px;}
 }
 .menu-row .name{font-weight:600;color:var(--ink);}
 .menu-row .desc{display:block;font-size:14px;font-weight:400;color:var(--ink-soft);}
+.menu-row .alg{display:block;margin-top:3px;font-size:12px;font-weight:400;letter-spacing:.05em;color:var(--ink-soft);font-variant-numeric:tabular-nums;}
 .menu-row .price{white-space:nowrap;color:var(--ink);font-variant-numeric:tabular-nums;}
 
 /* ---- scansioni menù ---- */
