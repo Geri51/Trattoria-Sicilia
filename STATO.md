@@ -54,7 +54,7 @@ Era quasi tutto template mai compilato (Impressum vuoto = rischio serio). Sessio
 
 **Decisione aperta, non presa**: se un giorno conviene spostare il dominio `trattoriapizzeriasicilia.de` su GitHub Pages (questo sito, già fatto meglio) e chiudere Jimdo, oppure continuare a rifinire Jimdo. L'utente ha scelto finora di sistemare Jimdo com'è.
 
-C'è anche un **dossier su ordini/pagamenti online** (canali, provider pagamento, GloriaFood/Stripe/Lieferando, acconti prenotazioni, chatbot) preparato ma **non pubblicato** come pagina.
+C'è anche un dossier su ordini/pagamenti online (canali, provider pagamento, GloriaFood/Stripe, acconti prenotazioni), discusso il 2–3/09 ma mai salvato — **ricostruito il 12/09 e salvato in [`dossier-ordini-pagamenti.md`](dossier-ordini-pagamenti.md)**. Riassunto: scelta fatta = GloriaFood (ordini/prenotazioni, gratis) + Stripe (pagamenti carta) + contanti; account GloriaFood/Stripe **mai aperti**; acconto sulle prenotazioni ancora senza soluzione decisa; IT-Recht Kanzlei scelto per i testi legali (AGB/Widerrufsbelehrung) ma non sottoscritto.
 
 ### ⚠️ Trovato l'11/09: menu ufficiale vero + foto rotte (commit esterni)
 
