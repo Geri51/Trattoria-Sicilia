@@ -8,16 +8,21 @@
 </head>
 
 <!--
-  Stand: 11.09.2026. Legende A-N / 1-17 übernommen von der offiziellen gedruckten
+  Stand: 12.09.2026. Legende A-N / 1-17 übernommen von der offiziellen gedruckten
   Speisekarte (gültig ab 15.05.2024), dort wortgleich abgedruckt (Foto vorhanden).
-  Die Zuordnung pro Gericht (welches Gericht welchen Buchstaben/welche Zahl trägt)
-  steht auf der gedruckten Karte in sehr kleiner Schrift und wurde HIER NICHT einzeln
-  übernommen, weil eine Übertragung aus einem Handyfoto bei so kleiner Schrift
-  Lesefehler enthalten kann (Ziffern wie „18"/„19" wurden gelesen, obwohl die Legende
-  nur bis 17 geht — Beweis für mindestens einen Lesefehler). Bei Allergenen wird lieber
-  gar keine Angabe gemacht als eine möglicherweise falsche.
-  TODO: pro Gericht die Codes von der gedruckten Karte sauber abschreiben (oder POS-
-  Export der Kasse nutzen), dann hier eintragen und diesen Kommentar löschen.
+  Die Zuordnung pro Gericht wurde jetzt von den Fotos der gedruckten Karte
+  (Galerie - pronte/menu_1..6.jpg) abgeschrieben, an unklaren Stellen mit bis zu 20-facher
+  Vergrößerung geprüft. Zwei offene Punkte, siehe scratch_allergeni_trascrizione.md:
+   1) Auf der gedruckten Karte tragen viele Gerichte die Zusatzstoff-Nummern 18/19,
+      die eigene Legende auf derselben Karte definiert aber nur 1-17. Codes >17 sind
+      unten mit * markiert statt einfach übernommen — Bedeutung bitte beim Personal
+      erfragen, verbindlich ist ohnehin die Karte im Lokal.
+   2) Fast jedes Gericht trug auf dem Ausdruck ein verdoppeltes "AA1" vor den übrigen
+      Codes (Buchstabe A + ein zusammengeklebtes Token "A1"). Wirkt wie ein Artefakt
+      der Druck-Software, nicht wie ein echtes zweites Gluten-Vorkommen. Hier wurde
+      "A" einfach gezählt (nicht doppelt) und "1" (Farbstoff) als echter Zusatzstoff
+      übernommen. Falls falsch: mit Kasse/POS-Software gegenchecken.
+  Rohtabelle (alle Codes wie gedruckt, unbereinigt) liegt in scratch_allergeni_trascrizione.md.
 -->
 
 <body>
@@ -44,7 +49,7 @@
   <p class="lead">Die Zeichen auf unserer gedruckten Speisekarte verweisen auf diese Liste. <strong>Buchstaben</strong> stehen für Allergene, <strong>Zahlen</strong> für Zusatzstoffe.</p>
 
   <div class="legal-todo">
-    <strong>Hinweis zu dieser Seite.</strong> Die genaue Zuordnung „welches Gericht hat welchen Code" wird gerade von der gedruckten Karte übertragen und ist hier noch nicht vollständig. <strong>Bitte bis dahin unser Personal fragen</strong> — verbindlich sind die Angaben auf der gedruckten Speisekarte im Lokal.
+    <strong>Hinweis zu dieser Seite.</strong> Die Zuordnung je Gericht steht jetzt weiter unten. Zahlen mit <strong>*</strong> sind auf der gedruckten Karte vermerkt, aber in der Legende dort nicht erklärt (sie geht nur bis 17) — <strong>bitte dazu unser Personal fragen</strong>. Verbindlich sind in jedem Fall die Angaben auf der gedruckten Speisekarte im Lokal.
   </div>
 
   <div class="menu-group">
@@ -85,6 +90,126 @@
     <div class="menu-row"><span class="name">16<span class="desc">Nitritpökelsalz</span></span></div>
     <div class="menu-row"><span class="name">17<span class="desc">Säuerungsmittel</span></span></div>
   </div>
+
+  <div class="menu-group">
+    <h3>Zuordnung je Gericht</h3>
+    <p class="muted" style="margin:0 0 6px;">Nummern wie auf der gedruckten Karte (Stand 15.05.2024). Kein Code angegeben = auf der gedruckten Karte für dieses Gericht keine Kennzeichnung vermerkt; im Zweifel bitte unser Personal fragen.</p>
+  </div>
+
+  <div class="menu-group">
+    <h3>Pizza (01&ndash;46)</h3>
+    <div class="menu-row"><span class="name">01 Margherita<span class="alg">A,F,G &middot; 1</span></span></div>
+    <div class="menu-row"><span class="name">02 Cipolla<span class="alg">A,F,G &middot; 1</span></span></div>
+    <div class="menu-row"><span class="name">03 Paprica<span class="alg">A,F,G &middot; 1</span></span></div>
+    <div class="menu-row"><span class="name">04 Napoli<span class="alg">A,F,G &middot; 1</span></span></div>
+    <div class="menu-row"><span class="name">05 Diavolo<span class="alg">A,F,G &middot; 1,2,6,7,19*</span></span></div>
+    <div class="menu-row"><span class="name">06 Peperoni<span class="alg">A,F,G &middot; 1</span></span></div>
+    <div class="menu-row"><span class="name">07 Salami<span class="alg">A,F,G &middot; 1,2,6,7,19*</span></span></div>
+    <div class="menu-row"><span class="name">08 Prosciutto<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">09 Carciofi<span class="alg">A,F,G</span></span></div>
+    <div class="menu-row"><span class="name">10 Funghi<span class="alg">A,F,G</span></span></div>
+    <div class="menu-row"><span class="name">11 Romana<span class="alg">A,F,G</span></span></div>
+    <div class="menu-row"><span class="name">12 San Remo<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">13 Salami / Prosciutto<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">14 Prosciutto / Funghi<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">15 Salami / Funghi<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">16 Alfredo<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">17 Tonno Thunfisch<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">18 Anna<span class="alg">A,F,G &middot; 1</span></span></div>
+    <div class="menu-row"><span class="name">19 Calzone 1<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">20 Calzone 2<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">21 Calzone 3<span class="alg">A,F,G &middot; 1</span></span></div>
+    <div class="menu-row"><span class="name">22 Hawaii<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">23 Bolognese<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">24 Mare Monte<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">25 Capricciosa<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">26 Quattro Stagioni<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">27 Scapricciatello<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">28 Gorgonzola<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">29 Spinaci<span class="alg">A,F,G</span></span></div>
+    <div class="menu-row"><span class="name">30 Vegetariana<span class="alg">A,F,G</span></span></div>
+    <div class="menu-row"><span class="name">31 Caprese<span class="alg">A,F,G</span></span></div>
+    <div class="menu-row"><span class="name">32 Frutti di Mare<span class="alg">A,B,D,F,G,N</span></span></div>
+    <div class="menu-row"><span class="name">33 Parmaschinken / Rucola<span class="alg">A,F,G &middot; 2</span></span></div>
+    <div class="menu-row"><span class="name">34 Roki<span class="alg">A,D,F,G &middot; 1,2,5,6,7,14,17,18*,19*</span></span></div>
+    <div class="menu-row"><span class="name">35 Quattro Formaggi<span class="alg">A,C,F,G &middot; 2,17</span></span></div>
+    <div class="menu-row"><span class="name">37 Primavera<span class="alg">A,C,F,G &middot; 2</span></span></div>
+    <div class="menu-row"><span class="name">38 Sicilia<span class="alg">A,D,F,G,I,J &middot; 1,2,5,6,7,14,17,18*,19*</span></span></div>
+    <div class="menu-row"><span class="name">39 Spaghetti Bolognese (Pizza)<span class="alg">A,C,F,G,I,J &middot; 5,7</span></span></div>
+    <div class="menu-row"><span class="name">40 Gamberetti<span class="alg">A,B,F,G &middot; 6</span></span></div>
+    <div class="menu-row"><span class="name">41 Bomba<span class="alg">A,D,F,G &middot; 1,2,5,6,7,14,18*,19*</span></span></div>
+    <div class="menu-row"><span class="name">43 Italia<span class="alg">A,F,G &middot; 17</span></span></div>
+    <div class="menu-row"><span class="name">44 Riviera<span class="alg">A,B,F &middot; 6</span></span></div>
+    <div class="menu-row"><span class="name">45 Maria<span class="alg">A,F,G &middot; 1,2,5,6,7,14,18*</span></span></div>
+    <div class="menu-row"><span class="name">46 Pollo<span class="alg">A,F,G</span></span></div>
+    <div class="menu-row"><span class="name">42 Pizzabrötchen mit Kräutercreme</span></div>
+    <div class="menu-row"><span class="name">Pizzablech Margherita (40&times;60&nbsp;cm)</span></div>
+  </div>
+
+  <div class="menu-group">
+    <h3>Nudelgerichte, Gnocchi, Tortellini &amp; Cannelloni (101&ndash;144)</h3>
+    <div class="menu-row"><span class="name">101 Spaghetti Napoli<span class="alg">A,C,F,G,I,J &middot; 1,2,5,7</span></span></div>
+    <div class="menu-row"><span class="name">102 Spaghetti Bolognese<span class="alg">A,C,F,G,I,J &middot; 1,2,5,7</span></span></div>
+    <div class="menu-row"><span class="name">103 Spaghetti Aglio Olio<span class="alg">A,C</span></span></div>
+    <div class="menu-row"><span class="name">104 Spaghetti Mediterrane<span class="alg">A,C,F,G,I,J &middot; 1,2,5,7</span></span></div>
+    <div class="menu-row"><span class="name">105 Spaghetti Carbonara<span class="alg">A,C,G &middot; 1,2,5,6,7,14,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">106 Spaghetti Frutti di Mare<span class="alg">A,B,C,D,F,G,I,J,N &middot; 2,5,7</span></span></div>
+    <div class="menu-row"><span class="name">107 Spaghetti Tonno<span class="alg">A,C,F,G,I,J &middot; 2,5,7</span></span></div>
+    <div class="menu-row"><span class="name">112 Penne Napoli<span class="alg">A,C,F,G,I,J &middot; 1,2,5,7</span></span></div>
+    <div class="menu-row"><span class="name">113 Penne Bolognese<span class="alg">A,C,F,G,I,J &middot; 5,7</span></span></div>
+    <div class="menu-row"><span class="name">114 Penne al Arrabiata<span class="alg">A,C,F,G,I,J &middot; 1,2,5,7</span></span></div>
+    <div class="menu-row"><span class="name">115 Penne quattro Formaggi<span class="alg">A,C,G &middot; 1,2,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">116 Penne al Forno<span class="alg">A,C,G &middot; 1,2,14,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">117 Bandnudeln Napoli<span class="alg">A,C,F,G,I,J &middot; 1,2,5,7</span></span></div>
+    <div class="menu-row"><span class="name">118 Bandnudeln Bolognese<span class="alg">A,C,F,G,I,J &middot; 5,7</span></span></div>
+    <div class="menu-row"><span class="name">119 Bandnudeln Contadina<span class="alg">A,C,F,G,I,J &middot; 5,7</span></span></div>
+    <div class="menu-row"><span class="name">120 Bandnudeln Sicilia<span class="alg">A,B,C,G &middot; 2,6,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">121 Tortellini Bolognese<span class="alg">A,C,F,G,I,J &middot; 5,7</span></span></div>
+    <div class="menu-row"><span class="name">122 Tortellini Panna<span class="alg">A,C,G &middot; 1,2,5,6,7,14,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">123 Tortellini al Forno<span class="alg">A,C,G &middot; 1,2,14,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">127 Lasagne<span class="alg">A,C,F,G,I,J &middot; 1,5,7,18*</span></span></div>
+    <div class="menu-row"><span class="name">128 Cannelloni<span class="alg">A,C,F,G,K,L &middot; 1</span></span></div>
+    <div class="menu-row"><span class="name">130 Penne alla Lillo<span class="alg">A,C,G &middot; 1,2,5,6,7,14,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">132 Tris<span class="alg">A,C,F,G,K,L &middot; 1</span></span></div>
+    <div class="menu-row"><span class="name">133 Gnocchi Sorentini<span class="alg">A,C,F,G,I,J &middot; 1,2,5,6,7,17</span></span></div>
+    <div class="menu-row"><span class="name">134 Gnocchi Pesto<span class="alg">A,C,G &middot; 2,6,7,18*</span></span></div>
+    <div class="menu-row"><span class="name">135 Gnocchi Bolognese<span class="alg">A,C,F,G,I,J &middot; 2,5,6,7,17</span></span></div>
+    <div class="menu-row"><span class="name">136 Gnocchi Gorgonzola<span class="alg">A,C,G &middot; 1,2,6,7,18*</span></span></div>
+    <div class="menu-row"><span class="name">137 Gnocchi Napoli<span class="alg">A,C,F,G,I,J &middot; 2,5,7</span></span></div>
+    <div class="menu-row"><span class="name">138 Bandnudeln Lachs<span class="alg">A,C,G &middot; 1,2,5,6,7,14,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">139 Penne Gratinate<span class="alg">A,C,G &middot; 1,2,14,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">140 Tortellini Casa<span class="alg">A,C,F,G,I,J &middot; 2,5,6,7,17</span></span></div>
+    <div class="menu-row"><span class="name">141 Tortellini Carlo<span class="alg">A,C,G &middot; 1,2,5,6,7,18*</span></span></div>
+    <div class="menu-row"><span class="name">142 Broccoli all Forno<span class="alg">A,C,D,F,G,I,J &middot; 2,5,7,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">143 Spinaci all Forno<span class="alg">A,C,D,F,G,I,J &middot; 2,5,7,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">144 Vedura Mista all Forno<span class="alg">A,C,D,F,G,I,J &middot; 2,5,7,17,18*</span></span></div>
+  </div>
+
+  <div class="menu-group">
+    <h3>Salate (202&ndash;213)</h3>
+    <p class="muted" style="margin:0 0 6px;">Dressing nach Wahl: Öl &amp; Essig, Joghurt oder French (French enthält Ei/Senf zusätzlich zu den unten genannten Codes).</p>
+    <div class="menu-row"><span class="name">202 Gurkensalat<span class="alg">A,G,J &middot; 5,7,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">203 Insalata Mista<span class="alg">A,G,J &middot; 5,7,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">204 Insalata Pomodori<span class="alg">A,G,J &middot; 5,7,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">206 Insalata Nizzarda<span class="alg">A,G,J &middot; 5,7,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">208 Insalata Caprese<span class="alg">A,G,J &middot; 5,7,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">209 Insalata Sicilia<span class="alg">A,G,J &middot; 5,7,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">210 Insalata di Pollo<span class="alg">A,G,J &middot; 5,7,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">211 Insalata Hawaii<span class="alg">A,C,D,F,G,J &middot; 1,2,5,7,14,17,18*</span></span></div>
+    <div class="menu-row"><span class="name">213 Bauernsalat<span class="alg">A,G,J &middot; 5,7,17,18*</span></span></div>
+  </div>
+
+  <div class="menu-group">
+    <h3>Fleischgerichte (304&ndash;312)</h3>
+    <div class="menu-row"><span class="name">304 Scaloppina Pizzaiola</span></div>
+    <div class="menu-row"><span class="name">307 Jägerschnitzel</span></div>
+    <div class="menu-row"><span class="name">308 Zigeunerschnitzel</span></div>
+    <div class="menu-row"><span class="name">309 Saltimbocca Romana</span></div>
+    <div class="menu-row"><span class="name">311 Scaloppina Funghi<span class="alg">G &middot; 2</span></span></div>
+    <div class="menu-row"><span class="name">312 Scaloppina Vino Bianco</span></div>
+  </div>
+
+  <p class="muted" style="margin-top:10px;">* Diese Zahl steht so auf der gedruckten Karte, ist aber in deren eigener Legende (1&ndash;17) nicht erklärt &mdash; bitte dazu unser Personal fragen.</p>
 
   <div class="legal-todo">
     <strong>Hinweise.</strong> Angaben gemäß Lebensmittelinformationsverordnung (EU) 1169/2011. Die Legende oben (Buchstaben/Zahlen) entspricht unserer gedruckten Speisekarte, gültig ab 15.05.2024. Die Zuordnung je Gericht steht auf dieser gedruckten Karte im Lokal — bitte dort nachsehen oder unser Personal fragen: <a href="tel:+4923326660888">+49 2332 6660888</a>. Trotz sorgfältiger Zubereitung in einer gemeinsamen Küche sind Spuren weiterer Allergene nicht vollständig auszuschließen.

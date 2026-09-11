@@ -77,12 +77,21 @@ Due commit fatti **fuori da questa chat** l'11/09 mattina (`4549868`, `4829ca3`,
 - **Tolti i codici allergene per piatto** sia da `allergene.html` che da `speisekarte.html` (i miei, dedotti in cucina, usavano lettere con significato diverso dalla legenda vera — pericoloso lasciarli). La pagina ora dice chiaramente: per il codice esatto di ogni piatto, chiedere al personale o guardare il menu stampato, finché qualcuno non trascrive con calma i codici veri dalle foto (testo minuscolo, letto da telefono → rischio di errore, es. ho letto "18"/"19" che non esistono nella legenda a 17 punti).
 - Commit: `fc02433` (foto) + un commit successivo per allergene/speisekarte puliti (vedi `git log`).
 
+### ✅ Fatto il 12/09: codici allergene per piatto trascritti e pubblicati su allergene.html
+
+- Trascritti a mano tutti i codici dai 6 scan (`menu_1.jpg`…`menu_6.jpg`): Pizza 01–46, Nudelgerichte/Gnocchi/Tortellini/Cannelloni 101–144, Salate 202–213, Fleischgerichte 304–312. Punti dubbi verificati con zoom fino a 20x (ritagli via PIL) prima di trascrivere — vedi metodo e tabella grezza non ripulita in `scratch_allergeni_trascrizione.md`.
+- **Due anomalie reali trovate sulla carta stampata stessa** (non errori di lettura, verificate a zoom alto):
+  1. Molti piatti riportano additivi **"18" e "19"**, ma la legenda stampata sulla stessa carta (e su allergene.html) arriva solo a **17** — significato non dichiarato da nessuna parte. Su allergene.html questi numeri sono marcati con **\*** e rimandano al personale.
+  2. Quasi ogni piatto porta un prefisso **"AA1"** (lettera A + un token "A1" incollato) anche su piatti semplicissimi (es. Spaghetti Aglio Olio) — sembra un artefatto del software di stampa più che un vero doppio allergene. Su allergene.html è stato semplificato a "A" (una volta) + additivo "1" reale. Cannelloni (128) e Tris (132) sono gli unici due piatti senza questo prefisso.
+- **Da chiarire con la cucina/gestionale cassa (POS)**, non risolvibile da foto: cosa sono 18/19, e se "AA1" va davvero interpretato come sopra. Finché non chiarito, il personale resta il riferimento vincolante (come già indicato in pagina).
+- Commit: vedi `git log` (dopo `fe11b8c`).
+
 ## Da fare
 
-1. **Trascrivere con calma i codici allergene per piatto** dai 6 scan `Galerie - pronte/menu_*.jpg` (foto pulite/ingrandite o dall'export del POS di cassa, non da una lettura veloce in chat) e rimetterli in `allergene.html` — priorità alta per la sicurezza alimentare, ma va fatto bene, non di fretta.
-2. **Aggiornare `speisekarte.html` con nomi/numeri/prezzi ufficiali** dal menu vero — mancano pizze (Margherita, Cipolla, Paprica, Diavolo, Peperoni, Salami, Carciofi, Romana, San Remo, Roki, Quattro Formaggi, Primavera, Sicilia, Parmaschinken/Rucola) e alcuni prezzi sono cambiati.
+1. **Aggiornare `speisekarte.html` con nomi/numeri/prezzi ufficiali** dal menu vero — mancano pizze (Margherita, Cipolla, Paprica, Diavolo, Peperoni, Salami, Carciofi, Romana, San Remo, Roki, Quattro Formaggi, Primavera, Sicilia, Parmaschinken/Rucola) e alcuni prezzi sono cambiati. Una volta risistemata, aggiungere anche lì i codici allergene per piatto (stessi dati già su allergene.html).
+2. **Chiedere in cucina/al gestionale POS** cosa significano gli additivi 18 e 19 (non nella legenda stampata) e se il prefisso "AA1" è reale o un refuso del programma usato per stampare il menu — vedi sopra. Utile anche chiedere a un legale/Steuerberater se l'attuale soluzione (codici certi in chiaro + "*" per i dubbi + "chiedere al personale") è sufficiente per la LMIV.
 3. **Jimdo — Home**: cancellare le sezioni demo (Onlineshop, Online buchen, Unser Team, Unsere Motivation, Unsere Geschichte, Menü finto).
-4. **Jimdo — Menü**: rifare con blocco Jimdo dedicato **"Speisekarte"**, dati dal menu ufficiale (punto 2) — anche lì i codici allergene vanno rifatti (stesso motivo del punto 1).
+4. **Jimdo — Menü**: rifare con blocco Jimdo dedicato **"Speisekarte"**, dati dal menu ufficiale (punto 1) — anche lì i codici allergene vanno rifatti (stesso motivo del punto 2).
 5. **Jimdo — Info**: rimuovere il riquadro mappa vuoto.
 6. **LUCID / Verpackungsregister / Einwegkunststofffonds**: da verificare con lo Steuerberater.
 7. Capire cos'era il **QR "Jetzt auch online bestellen!"** sul volantino — forse rilevante per il dossier ordini/pagamenti.
@@ -100,6 +109,7 @@ Due commit fatti **fuori da questa chat** l'11/09 mattina (`4549868`, `4829ca3`,
 | `Galerie - pronte/menu_1..6.jpg` | **scan del menu ufficiale stampato** — fonte vera per prezzi/piatti/allergeni |
 | `Galerie - pronte/galerie_01..53.jpg` | foto vere del locale, da abbinare alle sezioni che usavano `Imagines/*` (proprietario, vetrina, copertina menu, galleria) |
 | ~~`Imagines/*`~~ | **cancellata l'11/09**, non esiste più — non usare più questi percorsi |
+| `scratch_allergeni_trascrizione.md` | tabella grezza (non ripulita) di tutti i codici allergene/additivi come stampati sul menu, con le due anomalie spiegate — riferimento per chi rivede allergene.html |
 
 ## Come riprendere
 
