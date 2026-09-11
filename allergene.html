@@ -8,12 +8,16 @@
 </head>
 
 <!--
-  Allergen- und Zusatzstoffangaben von der Küche bestätigt (Stand September 2026).
-  Basis: kein Soja/Malz im Pizzateig · Sellerie in Tomaten- und Hackfleischsauce ·
-  Phosphat im Pizzakäse · Nitritpökelsalz + Phosphat in Wurstwaren ·
-  Sahnesaucen nur Sahne · echte Krebstiere · French-Dressing mit Senf + Ei ·
-  Fritteuse nicht gemeinsam genutzt · Teigwaren als Eiernudeln (C).
-  Bei Rezeptur- oder Lieferantenwechsel neu prüfen.
+  Stand: 11.09.2026. Legende A-N / 1-17 übernommen von der offiziellen gedruckten
+  Speisekarte (gültig ab 15.05.2024), dort wortgleich abgedruckt (Foto vorhanden).
+  Die Zuordnung pro Gericht (welches Gericht welchen Buchstaben/welche Zahl trägt)
+  steht auf der gedruckten Karte in sehr kleiner Schrift und wurde HIER NICHT einzeln
+  übernommen, weil eine Übertragung aus einem Handyfoto bei so kleiner Schrift
+  Lesefehler enthalten kann (Ziffern wie „18"/„19" wurden gelesen, obwohl die Legende
+  nur bis 17 geht — Beweis für mindestens einen Lesefehler). Bei Allergenen wird lieber
+  gar keine Angabe gemacht als eine möglicherweise falsche.
+  TODO: pro Gericht die Codes von der gedruckten Karte sauber abschreiben (oder POS-
+  Export der Kasse nutzen), dann hier eintragen und diesen Kommentar löschen.
 -->
 
 <body>
@@ -37,154 +41,53 @@
 <section class="panel">
   <span class="kicker">Kennzeichnung</span>
   <h2>Allergene &amp; Zusatzstoffe</h2>
-  <p class="lead">Die Zeichen hinter jedem Gericht auf der <a href="speisekarte.html">Speisekarte</a> verweisen auf diese Liste. <strong>Buchstaben</strong> stehen für Allergene, <strong>Zahlen</strong> für Zusatzstoffe.</p>
+  <p class="lead">Die Zeichen auf unserer gedruckten Speisekarte verweisen auf diese Liste. <strong>Buchstaben</strong> stehen für Allergene, <strong>Zahlen</strong> für Zusatzstoffe.</p>
+
+  <div class="legal-todo">
+    <strong>Hinweis zu dieser Seite.</strong> Die genaue Zuordnung „welches Gericht hat welchen Code" wird gerade von der gedruckten Karte übertragen und ist hier noch nicht vollständig. <strong>Bitte bis dahin unser Personal fragen</strong> — verbindlich sind die Angaben auf der gedruckten Speisekarte im Lokal.
+  </div>
 
   <div class="menu-group">
     <h3>Allergene (Buchstaben)</h3>
-    <div class="menu-row"><span class="name">A<span class="desc">Glutenhaltiges Getreide (Weizen)</span></span></div>
+    <div class="menu-row"><span class="name">A<span class="desc">Glutenhaltige Getreidesorten (z. B. Weizen)</span></span></div>
     <div class="menu-row"><span class="name">B<span class="desc">Krebstiere</span></span></div>
-    <div class="menu-row"><span class="name">C<span class="desc">Eier</span></span></div>
+    <div class="menu-row"><span class="name">C<span class="desc">Ei</span></span></div>
     <div class="menu-row"><span class="name">D<span class="desc">Fisch</span></span></div>
     <div class="menu-row"><span class="name">E<span class="desc">Erdnüsse</span></span></div>
     <div class="menu-row"><span class="name">F<span class="desc">Sojabohnen</span></span></div>
-    <div class="menu-row"><span class="name">G<span class="desc">Milch / Laktose</span></span></div>
-    <div class="menu-row"><span class="name">H<span class="desc">Schalenfrüchte (Nüsse)</span></span></div>
-    <div class="menu-row"><span class="name">I<span class="desc">Sellerie</span></span></div>
-    <div class="menu-row"><span class="name">J<span class="desc">Senf</span></span></div>
-    <div class="menu-row"><span class="name">K<span class="desc">Sesam</span></span></div>
-    <div class="menu-row"><span class="name">L<span class="desc">Schwefeldioxid / Sulfite</span></span></div>
-    <div class="menu-row"><span class="name">M<span class="desc">Lupinen</span></span></div>
-    <div class="menu-row"><span class="name">N<span class="desc">Weichtiere (Mollusken)</span></span></div>
+    <div class="menu-row"><span class="name">G<span class="desc">Milch (Laktose)</span></span></div>
+    <div class="menu-row"><span class="name">H<span class="desc">Schalenfrüchte</span></span></div>
+    <div class="menu-row"><span class="name">I<span class="desc">Lupine</span></span></div>
+    <div class="menu-row"><span class="name">J<span class="desc">Weichtiere (z. B. Muscheln)</span></span></div>
+    <div class="menu-row"><span class="name">K<span class="desc">Sellerie</span></span></div>
+    <div class="menu-row"><span class="name">L<span class="desc">Senf</span></span></div>
+    <div class="menu-row"><span class="name">M<span class="desc">Sesamsamen</span></span></div>
+    <div class="menu-row"><span class="name">N<span class="desc">Schwefeloxid / Sulfite</span></span></div>
   </div>
 
   <div class="menu-group">
     <h3>Zusatzstoffe (Zahlen)</h3>
-    <div class="menu-row"><span class="name">2<span class="desc">mit Konservierungsstoff / Nitritpökelsalz</span></span></div>
-    <div class="menu-row"><span class="name">7<span class="desc">mit Phosphat</span></span></div>
-  </div>
-
-  <div class="menu-group">
-    <h3>Pizza</h3>
-    <p class="muted" style="margin:0 0 6px;">Grundlage jeder Pizza: Weizenteig, Pizzakäse, Tomatensauce → <strong>A, G, I · 7</strong>. Sellerie (I) steckt in der Tomatensauce und in der Hackfleischsauce.</p>
-    <div class="menu-row"><span class="name">Salami / Prosciutto</span><span class="price">A, G, I · 2, 7</span></div>
-    <div class="menu-row"><span class="name">Prosciutto / Funghi</span><span class="price">A, G, I · 2, 7</span></div>
-    <div class="menu-row"><span class="name">Salami / Funghi</span><span class="price">A, G, I · 2, 7</span></div>
-    <div class="menu-row"><span class="name">Alfredo</span><span class="price">A, G, I · 2, 7</span></div>
-    <div class="menu-row"><span class="name">Tonno</span><span class="price">A, D, G, I · 7</span></div>
-    <div class="menu-row"><span class="name">Anna</span><span class="price">A, G, I · 2, 7</span></div>
-    <div class="menu-row"><span class="name">Calzone 1</span><span class="price">A, G, I · 2, 7</span></div>
-    <div class="menu-row"><span class="name">Calzone 2</span><span class="price">A, G, I · 2, 7</span></div>
-    <div class="menu-row"><span class="name">Calzone 3</span><span class="price">A, D, G, I · 7</span></div>
-    <div class="menu-row"><span class="name">Hawaii</span><span class="price">A, G, I · 2, 7</span></div>
-    <div class="menu-row"><span class="name">Bolognese</span><span class="price">A, G, I · 7</span></div>
-    <div class="menu-row"><span class="name">Mare Monte</span><span class="price">A, D, G, I · 7</span></div>
-    <div class="menu-row"><span class="name">Capricciosa</span><span class="price">A, D, G, I · 2, 7</span></div>
-    <div class="menu-row"><span class="name">Quattro Stagioni</span><span class="price">A, G, I · 2, 7</span></div>
-    <div class="menu-row"><span class="name">Scapricciatello</span><span class="price">A, D, G, I · 2, 7</span></div>
-    <div class="menu-row"><span class="name">Gorgonzola</span><span class="price">A, G, I · 7</span></div>
-    <div class="menu-row"><span class="name">Spinaci</span><span class="price">A, G, I · 7</span></div>
-    <div class="menu-row"><span class="name">Vegetariana</span><span class="price">A, G, I · 7</span></div>
-  </div>
-
-  <div class="menu-group">
-    <h3>Pizze Speziali</h3>
-    <div class="menu-row"><span class="name">Spaghetti Bolognese (Pizza)</span><span class="price">A, G, I · 7</span></div>
-    <div class="menu-row"><span class="name">Gamberetti</span><span class="price">A, B, G, I · 7</span></div>
-    <div class="menu-row"><span class="name">Bomba</span><span class="price">A, D, G, I · 2, 7</span></div>
-    <div class="menu-row"><span class="name">Italia</span><span class="price">A, G, I · 7</span></div>
-    <div class="menu-row"><span class="name">Riviera</span><span class="price">A, B, D, G, I · 7</span></div>
-    <div class="menu-row"><span class="name">Maria</span><span class="price">A, G, I · 2, 7</span></div>
-    <div class="menu-row"><span class="name">Pollo</span><span class="price">A, G, I · 7</span></div>
-    <div class="menu-row"><span class="name">Pizzabrötchen mit Kräutercreme</span><span class="price">A, G</span></div>
-    <div class="menu-row"><span class="name">Pizzablech Margherita</span><span class="price">A, G, I · 7</span></div>
-  </div>
-
-  <div class="menu-group">
-    <h3>Pizza-Extras</h3>
-    <p class="muted" style="margin:0 0 6px;">Nur das, was die Beilage zusätzlich einbringt.</p>
-    <div class="menu-row"><span class="name">Frisches Gemüse gemischt</span><span class="price">–</span></div>
-    <div class="menu-row"><span class="name">Jede Extrabeilage (Standard)</span><span class="price">–</span></div>
-    <div class="menu-row"><span class="name">Sardellen</span><span class="price">D</span></div>
-    <div class="menu-row"><span class="name">Thunfisch</span><span class="price">D</span></div>
-    <div class="menu-row"><span class="name">Gamberetti</span><span class="price">B</span></div>
-    <div class="menu-row"><span class="name">Meeresfrüchte</span><span class="price">B, N</span></div>
-    <div class="menu-row"><span class="name">Gorgonzola</span><span class="price">G</span></div>
-    <div class="menu-row"><span class="name">Mozzarella</span><span class="price">G</span></div>
-    <div class="menu-row"><span class="name">Schafskäse</span><span class="price">G</span></div>
-    <div class="menu-row"><span class="name">Pollo</span><span class="price">–</span></div>
-    <div class="menu-row"><span class="name">Parmaschinken</span><span class="price">2, 7</span></div>
-    <div class="menu-row"><span class="name">Lachs</span><span class="price">D</span></div>
-    <div class="menu-row"><span class="name">Peperoni</span><span class="price">–</span></div>
-  </div>
-
-  <div class="menu-group">
-    <h3>Spaghetti</h3>
-    <div class="menu-row"><span class="name">Spaghetti Napoli</span><span class="price">A, I</span></div>
-    <div class="menu-row"><span class="name">Spaghetti Bolognese</span><span class="price">A, I</span></div>
-    <div class="menu-row"><span class="name">Spaghetti Aglio Olio</span><span class="price">A</span></div>
-    <div class="menu-row"><span class="name">Spaghetti Mediterrane</span><span class="price">A</span></div>
-    <div class="menu-row"><span class="name">Spaghetti Carbonara</span><span class="price">A, G · 2</span></div>
-    <div class="menu-row"><span class="name">Spaghetti Frutti di Mare</span><span class="price">A, B, N</span></div>
-    <div class="menu-row"><span class="name">Spaghetti Tonno</span><span class="price">A, D, I</span></div>
-  </div>
-
-  <div class="menu-group">
-    <h3>Penne</h3>
-    <div class="menu-row"><span class="name">Penne Napoli</span><span class="price">A, I</span></div>
-    <div class="menu-row"><span class="name">Penne Bolognese</span><span class="price">A, I</span></div>
-    <div class="menu-row"><span class="name">Penne all’Arrabbiata</span><span class="price">A, I</span></div>
-    <div class="menu-row"><span class="name">Penne quattro Formaggi</span><span class="price">A, G</span></div>
-    <div class="menu-row"><span class="name">Penne al Forno</span><span class="price">A, G, I · 2, 7</span></div>
-  </div>
-
-  <div class="menu-group">
-    <h3>Bandnudeln</h3>
-    <p class="muted" style="margin:0 0 6px;">Bandnudeln als Eiernudeln angenommen → <strong>C</strong>.</p>
-    <div class="menu-row"><span class="name">Bandnudeln Napoli</span><span class="price">A, C, I</span></div>
-    <div class="menu-row"><span class="name">Bandnudeln Bolognese</span><span class="price">A, C, I</span></div>
-    <div class="menu-row"><span class="name">Bandnudeln Contadina</span><span class="price">A, C, G, I</span></div>
-    <div class="menu-row"><span class="name">Bandnudeln Sicilia</span><span class="price">A, B, C, G</span></div>
-  </div>
-
-  <div class="menu-group">
-    <h3>Tortellini &amp; Cannelloni</h3>
-    <p class="muted" style="margin:0 0 6px;">Gefüllte Teigwaren mit Ei → <strong>C</strong>.</p>
-    <div class="menu-row"><span class="name">Tortellini Bolognese</span><span class="price">A, C, G, I</span></div>
-    <div class="menu-row"><span class="name">Tortellini Panna</span><span class="price">A, C, G · 2</span></div>
-    <div class="menu-row"><span class="name">Tortellini al Forno</span><span class="price">A, C, G, I · 2, 7</span></div>
-    <div class="menu-row"><span class="name">Cannelloni</span><span class="price">A, C, G, I</span></div>
-    <div class="menu-row"><span class="name">Tris</span><span class="price">A, C, G, I · 2, 7</span></div>
-  </div>
-
-  <div class="menu-group">
-    <h3>Gnocchi</h3>
-    <div class="menu-row"><span class="name">Gnocchi Sorrentini</span><span class="price">A, G, I</span></div>
-    <div class="menu-row"><span class="name">Gnocchi Pesto</span><span class="price">A, G, H</span></div>
-    <div class="menu-row"><span class="name">Gnocchi Bolognese</span><span class="price">A, I</span></div>
-    <div class="menu-row"><span class="name">Gnocchi Gorgonzola</span><span class="price">A, G</span></div>
-    <div class="menu-row"><span class="name">Gnocchi Napoli</span><span class="price">A, I</span></div>
-  </div>
-
-  <div class="menu-group">
-    <h3>Überbackenes</h3>
-    <div class="menu-row"><span class="name">Tortellini Casa</span><span class="price">A, C, G · 7</span></div>
-    <div class="menu-row"><span class="name">Tortellini Carlo</span><span class="price">A, C, G · 7</span></div>
-    <div class="menu-row"><span class="name">Broccoli al Forno</span><span class="price">G, I · 7</span></div>
-    <div class="menu-row"><span class="name">Spinaci al Forno</span><span class="price">G, I · 7</span></div>
-    <div class="menu-row"><span class="name">Verdura Mista al Forno</span><span class="price">G, I · 7</span></div>
-  </div>
-
-  <div class="menu-group">
-    <h3>Salate</h3>
-    <p class="muted" style="margin:0 0 6px;">Dressing nach Wahl: Essig &amp; Öl <strong>(L)</strong> · Joghurt <strong>(G)</strong> · French <strong>(C, J)</strong>.</p>
-    <div class="menu-row"><span class="name">Gurkensalat</span><span class="price">siehe Dressing</span></div>
-    <div class="menu-row"><span class="name">Insalata Mista</span><span class="price">siehe Dressing</span></div>
-    <div class="menu-row"><span class="name">Insalata Pomodori</span><span class="price">siehe Dressing</span></div>
-    <div class="menu-row"><span class="name">Insalata Nizzarda</span><span class="price">D · siehe Dressing</span></div>
+    <div class="menu-row"><span class="name">1<span class="desc">Farbstoff</span></span></div>
+    <div class="menu-row"><span class="name">2<span class="desc">Konservierungsstoff</span></span></div>
+    <div class="menu-row"><span class="name">3<span class="desc">Antioxidationsmittel</span></span></div>
+    <div class="menu-row"><span class="name">4<span class="desc">Geschmacksverstärker</span></span></div>
+    <div class="menu-row"><span class="name">5<span class="desc">Schwefeloxid</span></span></div>
+    <div class="menu-row"><span class="name">6<span class="desc">Zuckerarten</span></span></div>
+    <div class="menu-row"><span class="name">7<span class="desc">Phosphat</span></span></div>
+    <div class="menu-row"><span class="name">8<span class="desc">Milcheiweiß</span></span></div>
+    <div class="menu-row"><span class="name">9<span class="desc">Koffeinhaltig</span></span></div>
+    <div class="menu-row"><span class="name">10<span class="desc">Chininhaltig</span></span></div>
+    <div class="menu-row"><span class="name">11<span class="desc">Süßungsmittel</span></span></div>
+    <div class="menu-row"><span class="name">12<span class="desc">Enthält eine Phenylalaninquelle</span></span></div>
+    <div class="menu-row"><span class="name">13<span class="desc">Gewachst</span></span></div>
+    <div class="menu-row"><span class="name">14<span class="desc">Geschwärzt</span></span></div>
+    <div class="menu-row"><span class="name">15<span class="desc">Taurin</span></span></div>
+    <div class="menu-row"><span class="name">16<span class="desc">Nitritpökelsalz</span></span></div>
+    <div class="menu-row"><span class="name">17<span class="desc">Säuerungsmittel</span></span></div>
   </div>
 
   <div class="legal-todo">
-    <strong>Hinweise.</strong> Angaben gemäß Lebensmittelinformations­verordnung (EU) 1169/2011, Stand September 2026, auf Basis unserer Rezepturen und der Angaben unserer Lieferanten. Bei Rezeptur- oder Lieferantenwechsel kann sich die Kennzeichnung ändern. Trotz sorgfältiger Zubereitung in einer gemeinsamen Küche sind Spuren weiterer Allergene nicht vollständig auszuschließen; die Fritteuse wird nicht gemeinsam genutzt. Für verbindliche Auskünfte wenden Sie sich bitte an unser Personal: <a href="tel:+4923326660888">+49 2332 6660888</a>.
+    <strong>Hinweise.</strong> Angaben gemäß Lebensmittelinformationsverordnung (EU) 1169/2011. Die Legende oben (Buchstaben/Zahlen) entspricht unserer gedruckten Speisekarte, gültig ab 15.05.2024. Die Zuordnung je Gericht steht auf dieser gedruckten Karte im Lokal — bitte dort nachsehen oder unser Personal fragen: <a href="tel:+4923326660888">+49 2332 6660888</a>. Trotz sorgfältiger Zubereitung in einer gemeinsamen Küche sind Spuren weiterer Allergene nicht vollständig auszuschließen.
   </div>
 
   <p class="muted" style="margin-top:20px;"><a href="speisekarte.html">← Zur Speisekarte</a></p>

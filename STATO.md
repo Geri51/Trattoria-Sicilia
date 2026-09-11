@@ -66,15 +66,23 @@ Due commit fatti **fuori da questa chat** l'11/09 mattina (`4549868`, `4829ca3`,
 
 **`menu_1.jpg`…`menu_6.jpg` sono la scansione del menu stampato ufficiale, valido dal 15 maggio 2024** — fonte più autorevole di `speisekarte.html`:
 - **Numerazione POS reale** (Pizza 01–46, Nudelgerichte 101–144, Salate 202–213) con **prezzi che differiscono** da quelli nel sito, e **pizze mancanti nel sito** (Margherita, Cipolla, Paprica, Diavolo, Peperoni, Salami, Carciofi, Romana, San Remo, Roki, Quattro Formaggi, Primavera, Sicilia, Parmaschinken/Rucola…).
-- **Codici allergeni già ufficiali e stampati** (schema tipo `AA1,F,G,1,2,5,6,7,17` — diverso dal mio A–N/1-13 dedotto in cucina) → **più affidabili dei miei**, `allergene.html` e i codici in `speisekarte.html` andrebbero **rifatti da questa fonte**, non dalle mie deduzioni.
+- **Codici allergeni già ufficiali e stampati** — vedi legenda vera trovata su `menu_6.jpg`, sotto.
 - **Retro del volantino**: Inhaber storico "Rocco Brancato" (**superato** — l'attuale titolare è **Maria Brancato**, confermato dall'utente l'11/09); Instagram `trattoriasicilia_`; **zone/costi di consegna reali** (Gevelsberg da 16,50 € + 1 €; Gevelsberg-Knapp/Silschede +2 €; Schwelm+Ennepetal da 22,50 € +3 €); orari di consegna (Di–Sa 11–14/17–22:30, Do+Festivi 12–14/17–22:30, Lun Ruhetag); **40 posti interni + 25 esterni**; un **QR "Jetzt auch online bestellen!"** — da capire che sistema fosse (utile per il dossier ordini/pagamenti).
+
+### ✅ Fatto l'11/09 (seconda parte): foto rotte sistemate, legenda allergeni corretta
+
+- **`galerie.html`**: tutte le 53 foto ora da `Galerie - pronte/` (path con spazio, encodato `%20`), captions vere solo dove verificate a vista, generiche altrove.
+- **`style.css`**: sfondi `Imagines/*` sostituiti — Über uns → `galerie_25.jpg` (foto di gruppo/famiglia), Menu → `galerie_04.jpg` (sala), Info → `galerie_15.jpg` (facciata col cartello). Nessun riferimento a `Imagines/` rimasto (verificato con grep).
+- **`allergene.html`**: **legenda riscritta con quella VERA stampata su `menu_6.jpg`** — attenzione, lettere I–N diverse da quelle che avevo inventato: **I=Lupine, J=Weichtiere, K=Sellerie, L=Senf, M=Sesamsamen, N=Schwefeloxid/Sulfite** (non più I=Sellerie ecc.). Additivi 1–17 completi (prima ne avevo solo 2 e 7).
+- **Tolti i codici allergene per piatto** sia da `allergene.html` che da `speisekarte.html` (i miei, dedotti in cucina, usavano lettere con significato diverso dalla legenda vera — pericoloso lasciarli). La pagina ora dice chiaramente: per il codice esatto di ogni piatto, chiedere al personale o guardare il menu stampato, finché qualcuno non trascrive con calma i codici veri dalle foto (testo minuscolo, letto da telefono → rischio di errore, es. ho letto "18"/"19" che non esistono nella legenda a 17 punti).
+- Commit: `fc02433` (foto) + un commit successivo per allergene/speisekarte puliti (vedi `git log`).
 
 ## Da fare
 
-1. **Rifare `speisekarte.html` + `allergene.html`** dai 6 scan in `Galerie - pronte/menu_*.jpg` (fonte ufficiale) — priorità alta, sia su questo sito che sul testo già incollato in Jimdo.
-2. **Sistemare i riferimenti immagine rotti** in `style.css` e `galerie.html` (puntano a `Imagines/` che non esiste più) — scegliere le foto giuste da `Galerie - pronte/`.
+1. **Trascrivere con calma i codici allergene per piatto** dai 6 scan `Galerie - pronte/menu_*.jpg` (foto pulite/ingrandite o dall'export del POS di cassa, non da una lettura veloce in chat) e rimetterli in `allergene.html` — priorità alta per la sicurezza alimentare, ma va fatto bene, non di fretta.
+2. **Aggiornare `speisekarte.html` con nomi/numeri/prezzi ufficiali** dal menu vero — mancano pizze (Margherita, Cipolla, Paprica, Diavolo, Peperoni, Salami, Carciofi, Romana, San Remo, Roki, Quattro Formaggi, Primavera, Sicilia, Parmaschinken/Rucola) e alcuni prezzi sono cambiati.
 3. **Jimdo — Home**: cancellare le sezioni demo (Onlineshop, Online buchen, Unser Team, Unsere Motivation, Unsere Geschichte, Menü finto).
-4. **Jimdo — Menü**: rifare con blocco Jimdo dedicato **"Speisekarte"**, dati dal menu ufficiale (punto 1).
+4. **Jimdo — Menü**: rifare con blocco Jimdo dedicato **"Speisekarte"**, dati dal menu ufficiale (punto 2) — anche lì i codici allergene vanno rifatti (stesso motivo del punto 1).
 5. **Jimdo — Info**: rimuovere il riquadro mappa vuoto.
 6. **LUCID / Verpackungsregister / Einwegkunststofffonds**: da verificare con lo Steuerberater.
 7. Capire cos'era il **QR "Jetzt auch online bestellen!"** sul volantino — forse rilevante per il dossier ordini/pagamenti.
@@ -85,7 +93,7 @@ Due commit fatti **fuori da questa chat** l'11/09 mattina (`4549868`, `4829ca3`,
 
 | File | Cosa |
 |---|---|
-| `style.css` | stile unico, tutte le pagine — **riferimenti a `Imagines/` da correggere** |
+| `style.css` | stile unico, tutte le pagine — sfondi ora su `Galerie - pronte/` |
 | `index.html` | home (hero + 2 pannelli splash) |
 | `ueber-uns / speisekarte / menu / galerie / presse / social / info / prenota / allergene .html` | pagine interne |
 | `bg.jpg` | foto sfondo (ripulita) · `restaurant.jpg` originale intatto |
