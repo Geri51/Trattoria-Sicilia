@@ -184,9 +184,9 @@ p{margin:0 0 1em;}
   background:#3a2a1c;
   box-shadow:0 22px 60px rgba(15,10,6,.3);
 }
-.aboutbg::before{                           /* foto del proprietario (Pasquale) */
+.aboutbg::before{                           /* foto di famiglia, dal locale */
   content:""; position:absolute; inset:0; z-index:-2;
-  background:url("Imagines/Pasquale.jpg") 74% 20% / cover no-repeat;
+  background:url("Galerie%20-%20pronte/galerie_25.jpg") center 30% / cover no-repeat;
 }
 .aboutbg::after{                            /* velo: scuro a sinistra (testo), chiaro a destra (foto) */
   content:""; position:absolute; inset:0; z-index:-1;
@@ -199,10 +199,10 @@ p{margin:0 0 1em;}
 .aboutbg .btn.ghost{ color:#fff; border-color:#e6564a; background:rgba(255,255,255,.06); }
 .aboutbg .btn.ghost:hover{ background:#e03b30; color:#fff; border-color:#e03b30; }
 
-/* ===== menu.html — copertina in pelle come sfondo ===== */
+/* ===== menu.html — foto della sala come sfondo ===== */
 body.page-menu::before{
   content:""; position:fixed; inset:0; z-index:-2; pointer-events:none;
-  background:url("Imagines/461927989_2183317175371399_4648648561966034317_n.jpg") center 20% / cover no-repeat;
+  background:url("Galerie%20-%20pronte/galerie_04.jpg") center 20% / cover no-repeat;
 }
 body.page-menu::after{                      /* velo caldo leggero per uniformare */
   content:""; position:fixed; inset:0; z-index:-1; pointer-events:none;
@@ -213,7 +213,7 @@ body.page-menu .subpage{ padding-top:clamp(100px,16vh,150px); }
 /* ===== info.html ===== */
 body.page-info::before{                     /* facciata del locale come sfondo */
   content:""; position:fixed; inset:0; z-index:-2; pointer-events:none;
-  background:url("Imagines/lokal.jpg") center 32% / cover no-repeat;
+  background:url("Galerie%20-%20pronte/galerie_15.jpg") center 30% / cover no-repeat;
 }
 body.page-info::after{                      /* velo per staccare header/pannelli */
   content:""; position:fixed; inset:0; z-index:-1; pointer-events:none;
