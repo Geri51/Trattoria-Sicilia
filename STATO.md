@@ -56,6 +56,16 @@ Era quasi tutto template mai compilato (Impressum vuoto = rischio serio). Sessio
 
 C'è anche un dossier su ordini/pagamenti online (canali, provider pagamento, GloriaFood/Stripe, acconti prenotazioni), discusso il 2–3/09 ma mai salvato — **ricostruito il 12/09 e salvato in [`dossier-ordini-pagamenti.md`](dossier-ordini-pagamenti.md)**. Riassunto: scelta fatta = GloriaFood (ordini/prenotazioni, gratis) + Stripe (pagamenti carta) + contanti; account GloriaFood/Stripe **mai aperti**; acconto sulle prenotazioni ancora senza soluzione decisa; IT-Recht Kanzlei scelto per i testi legali (AGB/Widerrufsbelehrung) ma non sottoscritto.
 
+### ⚠️ Scoperta il 12–13/09: esiste già un sistema DISH/METRO attivo (ordini online + un terzo sito)
+
+Cercando cosa fosse il QR "Jetzt auch online bestellen!" sul volantino (l'utente ha confermato: porta a **Lieferando**, inserzione attiva), è emerso per caso un **secondo sistema per niente collegato al QR**, di **DISH Digital Solutions GmbH** (ramo software di METRO, il grossista da cui il locale compra i prodotti — due attività separate della stessa azienda):
+
+- **`https://trattoria-sicilia.order.app.hd.digital`** — sistema di ordinazione online già configurato: menu vero, prezzi veri, carrello, checkout con **contanti / carta al ristorante / pagamento online**. I codici allergene lì sono identici carattere per carattere a quelli trascritti dalle foto del menu stampato (stessa fonte, quasi certamente la cassa/POS del locale) — **conferma indipendente che la trascrizione del 12/09 è corretta**, "AA1" e "18/19" inclusi. Anche la loro legenda additivi si ferma a 17: il buco 18/19 non è un errore di lettura mia, è un dato mancante anche nel loro sistema ufficiale.
+- **`https://trattoria-sicilia-gevelsberg.metro.bar`** — un **terzo sito web completo** (oltre a questo su GitHub e a quello Jimdo) fatto da DISH: orari, mappa, pulsante "Ordina cibo" (porta al sistema sopra). **Nota legale minima e con dato sbagliato**: dice solo telefono/email e "Persona responsabile: **Rocco Brancato**" (il vecchio titolare — va Maria Brancato). Manca forma giuridica, indirizzo nella nota, autorità di vigilanza alcolici. **Già online e indicizzato su Google adesso**, quindi il problema esiste già, indipendentemente da qualunque decisione su GloriaFood/DISH.
+- **Nessun accesso**: si vede tutto da fuori (pagine pubbliche), ma non c'è un login nel pannello DISH/METRO per correggere nulla — serve l'utente (o chi ha aperto l'account) per entrarci.
+- **DISH fa la stessa cosa che GloriaFood avrebbe dovuto fare**, ed esiste già configurato — non serve costruire GloriaFood da zero se questo va bene. Prezzi ufficiali DISH (da metro.de): **DISH Professional Order** 49€/mese (58,31€ IVA incl.) + 299€ una tantum + **1,89%** sui pagamenti online, oppure **DISH Premium** (include anche prenotazioni tavolo) 69€/mese (82,11€ incl.) + 279€ una tantum + stessa commissione. Non è chiaro se il locale lo sta già pagando (va controllato con una bolletta/estratto conto Metro) o se è un account aperto ma non ancora fatturato.
+- **Decisione dell'utente (13/09): non collegare nulla al sito pubblico finché lo schema non è chiaro** — prima capire chi ha l'accesso all'account DISH/Metro, se viene pagato, e correggere "Rocco Brancato".
+
 ### ⚠️ Trovato l'11/09: menu ufficiale vero + foto rotte (commit esterni)
 
 Due commit fatti **fuori da questa chat** l'11/09 mattina (`4549868`, `4829ca3`, già pushati) hanno riorganizzato le immagini:
@@ -88,6 +98,7 @@ Due commit fatti **fuori da questa chat** l'11/09 mattina (`4549868`, `4829ca3`,
 
 ## Da fare
 
+0. **Capire lo schema DISH/METRO**: chi ha aperto l'account, se viene pagato (controllare bolletta/estratto conto Metro), recuperare l'accesso al pannello, correggere "Rocco Brancato" → "Maria Brancato" nella nota legale di `trattoria-sicilia-gevelsberg.metro.bar`. Solo dopo decidere se collegare il sito principale al sistema di ordini DISH già esistente (`trattoria-sicilia.order.app.hd.digital`) invece di costruire GloriaFood da zero.
 1. **Aggiornare `speisekarte.html` con nomi/numeri/prezzi ufficiali** dal menu vero — mancano pizze (Margherita, Cipolla, Paprica, Diavolo, Peperoni, Salami, Carciofi, Romana, San Remo, Roki, Quattro Formaggi, Primavera, Sicilia, Parmaschinken/Rucola) e alcuni prezzi sono cambiati. Una volta risistemata, aggiungere anche lì i codici allergene per piatto (stessi dati già su allergene.html).
 2. **Chiedere in cucina/al gestionale POS** cosa significano gli additivi 18 e 19 (non nella legenda stampata) e se il prefisso "AA1" è reale o un refuso del programma usato per stampare il menu — vedi sopra. Utile anche chiedere a un legale/Steuerberater se l'attuale soluzione (codici certi in chiaro + "*" per i dubbi + "chiedere al personale") è sufficiente per la LMIV.
 3. **Jimdo — Home**: cancellare le sezioni demo (Onlineshop, Online buchen, Unser Team, Unsere Motivation, Unsere Geschichte, Menü finto).
