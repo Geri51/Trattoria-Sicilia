@@ -105,18 +105,6 @@ L'acconto sulle prenotazioni (punto 4) resta separato e aperto.
 - Decidere zona di consegna, costo, ordine minimo, orari accettazione ordini, tempo di preparazione — mai discussi con numeri concreti in quella conversazione (nel frattempo trovati sul volantino del menu ufficiale, vedi STATO.md: Gevelsberg da 16,50€+1€, Gevelsberg-Knapp/Silschede +2€, Schwelm+Ennepetal da 22,50€+3€).
 - C'era anche un **QR "Jetzt auch online bestellen!"** sul retro del volantino ufficiale (STATO.md, trovato l'11/09) — non ancora capito che sistema fosse; potrebbe essere utile confrontarlo con GloriaFood prima di aprire un account nuovo.
 
-## 10. ⚠️ Aggiornamento 13/09: esiste già un sistema equivalente attivo (DISH/METRO)
-
-Tutto quanto sopra (punti 1–9) era la situazione a inizio settembre, **quando si pensava di dover costruire qualcosa da zero**. Il 12–13/09 è emerso che il locale ha già, configurato e (a quanto pare) funzionante, un sistema che fa la stessa cosa:
-
-- Piattaforma: **DISH by METRO** (DISH Digital Solutions GmbH, ramo software del grossista Metro Cash & Carry — non c'entra l'essere clienti di Metro per la spesa, è un servizio separato della stessa azienda).
-- **Ordinazione online già attiva**: `https://trattoria-sicilia.order.app.hd.digital` — menu vero, prezzi veri, carrello, checkout con contanti / carta al ristorante / **pagamento online**. I codici allergene coincidono esattamente con quelli del menu stampato ufficiale, quasi certamente stessa fonte (cassa/POS DISH).
-- **Terzo sito web** (oltre a questo su GitHub e al Jimdo): `https://trattoria-sicilia-gevelsberg.metro.bar` — con orari, mappa, pulsante "Ordina cibo". **Nota legale minima e con nome sbagliato** ("Rocco Brancato" invece di Maria) — già online e pubblico ora.
-- Prezzi ufficiali DISH (metro.de): **DISH Professional Order** 49€/mese (58,31€ IVA incl.) + 299€ una tantum + 1,89% sui pagamenti online — oppure **DISH Premium** (+ prenotazioni tavolo) 69€/mese (82,11€ incl.) + 279€ una tantum, stessa commissione.
-- Non è chiaro chi ha aperto l'account, se viene già pagato, e nessuno di questa sessione ha un login nel pannello DISH per verificarlo o correggere il nome sbagliato.
-
-**Questo potenzialmente rende superfluo tutto il piano GloriaFood+Stripe** (punti 1–6 sopra): stessa funzione, già pronta. Ma prima di collegare qualunque cosa al sito pubblico, l'utente ha chiesto di chiarire lo schema (accesso, pagamento, nome sbagliato) — vedi STATO.md, punto 0 dei "Da fare".
-
-## 11. Dati del ristorante usati in questo dossier
+## 10. Dati del ristorante usati in questo dossier
 
 Trattoria Pizzeria Sicilia · Rosendahler Straße 12, 58285 Gevelsberg · Titolare Maria Brancato (Einzelunternehmen) · email GloriaFood `b.brancato@hotmail.de` · tel `+49 2332 6660888`.
