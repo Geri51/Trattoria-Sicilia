@@ -54,7 +54,17 @@ Era quasi tutto template mai compilato (Impressum vuoto = rischio serio). Sessio
 
 **Decisione aperta, non presa**: se un giorno conviene spostare il dominio `trattoriapizzeriasicilia.de` su GitHub Pages (questo sito, già fatto meglio) e chiudere Jimdo, oppure continuare a rifinire Jimdo. L'utente ha scelto finora di sistemare Jimdo com'è.
 
-C'è anche un dossier su ordini/pagamenti online (canali, provider pagamento, GloriaFood/Stripe, acconti prenotazioni), discusso il 2–3/09 ma mai salvato — **ricostruito il 12/09 e salvato in [`dossier-ordini-pagamenti.md`](dossier-ordini-pagamenti.md)**. Riassunto: scelta fatta = GloriaFood (ordini/prenotazioni, gratis) + Stripe (pagamenti carta) + contanti; account GloriaFood/Stripe **mai aperti**; acconto sulle prenotazioni ancora senza soluzione decisa; IT-Recht Kanzlei scelto per i testi legali (AGB/Widerrufsbelehrung) ma non sottoscritto.
+C'è anche un dossier su ordini/pagamenti online (canali, provider pagamento, GloriaFood/Stripe, acconti prenotazioni), discusso il 2–3/09 ma mai salvato — **ricostruito il 12/09 e salvato in [`dossier-ordini-pagamenti.md`](dossier-ordini-pagamenti.md)**. Riassunto della vecchia sessione: scelta fatta allora = GloriaFood (ordini/prenotazioni, gratis) + Stripe (pagamenti carta) + contanti; account GloriaFood/Stripe **mai aperti**; acconto sulle prenotazioni ancora senza soluzione decisa; IT-Recht Kanzlei scelto per i testi legali (AGB/Widerrufsbelehrung) ma non sottoscritto. **Superato dalla scoperta del 13/09 sotto — GloriaFood non serve più.**
+
+### ✅ Chiarito il 13/09: DISH è reale, attivo, pagato — GloriaFood non serve
+
+Confermato con fattura vera (`DISH Digital Solutions GmbH`, Rechnungsnr. `INV/2026/09/004189`, 01.09.2026):
+- Abbonamento attivo: **DISH Professional Order Subscription** (mensile) — **59,00€ netti + 19% IVA = 70,21€/mese totali** (non Premium: niente prenotazioni tavolo incluse nel pacchetto, solo ordini online + sito).
+- Intestata correttamente a "Trattoria Sicilia, Rosendahler Straße 12, 58285 Gevelsberg", numero cliente `1150 3977 4000`.
+- L'utente conferma: DISH **porta anche clienti** (come Lieferando, non solo un canale diretto) e ha una sua attrezzatura/hardware dedicata (tablet/stampante).
+- **Decisione presa**: con DISH già attivo e pagato, **GloriaFood non serve più** — il piano GloriaFood+Stripe del vecchio dossier è superato, non va più perseguito.
+- **Punto aperto rimasto**: collegare il sito principale (trattoria.gealoalor.com) al sistema ordini DISH sposta il cliente su un altro dominio (`trattoria-sicilia.order.app.hd.digital`), non resta "dentro" il sito — non sappiamo se DISH offre anche un widget incorporato (come GloriaFood) invece del semplice link, perché **nessuno ha ancora l'accesso al pannello DISH** per verificarlo. Priorità: recuperare l'accesso all'account DISH/Metro (chi l'ha aperto, login) prima di collegare qualsiasi bottone sul sito pubblico.
+- Corretta anche la nota legale sbagliata ("Rocco Brancato" invece di Maria) sul sito DISH: **resta da fare**, serve l'accesso al pannello.
 
 ### ⚠️ Trovato l'11/09: menu ufficiale vero + foto rotte (commit esterni)
 

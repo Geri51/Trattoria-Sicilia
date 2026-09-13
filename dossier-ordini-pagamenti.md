@@ -2,6 +2,8 @@
 
 *Ricostruito il 12/09/2026 dalla trascrizione della sessione "ordini e pagamenti online" del 2–3/09/2026 (esisteva solo come chat, non era mai stato salvato come documento). Dove qualcosa è rimasto indeciso o non implementato, è segnalato come **PUNTO APERTO**.*
 
+> ⚠️ **Superato il 13/09/2026**: tutto questo dossier (GloriaFood+Stripe) era basato sull'idea di costruire un canale ordini da zero. Il 13/09 è stato confermato con fattura vera che il locale ha già un **abbonamento DISH Professional Order attivo e pagato** (70,21€/mese, Rechnungsnr. INV/2026/09/004189) — vedi STATO.md, sezione "Chiarito il 13/09". **Decisione presa: GloriaFood non serve più.** Il dossier resta come riferimento storico di come si è arrivati alla decisione, non come piano da seguire.
+
 ---
 
 ## 0. Contesto di partenza
