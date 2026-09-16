@@ -71,6 +71,18 @@
     var WHATSAPP_NUMBER = "491792398447";
     var form = document.getElementById("reservation-form");
     var msgBox = document.getElementById("form-message");
+    function creaTestoPersone(numero) {
+    var testo = "Persone: " + numero;
+    return testo;
+}
+function creaRiepilogo(nome, numero) {
+    var riepilogo = nome + " - Persone: " + numero;
+    return riepilogo;
+}
+function creaMessaggio(nome) {
+    var messaggio = "Prenotazione di: " + nome;
+    return messaggio;
+}
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var data = new FormData(form);
@@ -82,10 +94,9 @@
       }
       var lines = [
         "Neue Reservierungsanfrage",
-        "Name: " + (data.get("name") || "").trim(),
+        creaRiepilogo(data.get("name"), personen),
         "Telefon: " + (data.get("telefon") || "").trim(),
         "E-Mail: " + ((data.get("email") || "").trim() || "-"),
-        "Personen: " + personen,
         "Datum: " + data.get("datum"),
         "Uhrzeit: " + data.get("uhrzeit")
       ];
@@ -97,6 +108,7 @@
       msgBox.textContent = "WhatsApp wurde geöffnet. Bitte senden Sie die vorbereitete Nachricht ab, um Ihre Reservierung anzufragen.";
     });
   })();
+  
 </script>
 
 </body>
