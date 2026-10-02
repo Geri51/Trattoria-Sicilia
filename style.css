@@ -410,3 +410,42 @@ address{font-style:normal;color:var(--ink-soft);margin-top:6px;}
 @media (prefers-reduced-motion:reduce){
   .hero-inner{animation:none;} .btn,.hero h1{transition:none;}
 }
+#chat-finestra{
+  position:fixed;
+  right:clamp(14px,3vw,28px);
+  bottom:90px;
+  z-index:60;
+  width:340px;
+  background:var(--panel);
+  border-radius:14px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  height:420px;
+  box-shadow:0 14px 30px rgba(15,10,6,.25);
+  border:1px solid var(--line);
+}
+#chat-messaggi{
+  flex:1;
+  overflow-y:auto;
+  padding:14px;
+  font-size:14px;
+  color:var(--ink);
+}
+#chat-casella{
+  width:100%;
+  box-sizing:border-box;
+  padding:10px 12px;
+  border:none;
+  border-top:1px solid var(--line);
+  font:inherit;
+}
+#chat-invia{
+  width:100%;
+  padding:10px;
+  border:none;
+  background:var(--accent);
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+}
