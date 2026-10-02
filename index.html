@@ -81,17 +81,7 @@
   <span class="foot-legal"><a href="impressum.html">Impressum</a> &middot; <a href="datenschutz.html">Datenschutz</a> &middot; <a href="agb.html">AGB</a> &middot; <a href="widerruf.html">Widerrufsbelehrung</a></span>
 </footer>
 
-<script>
-  var h=document.querySelector('.site-header');
-  var c=document.querySelector('.chat-fab');
-  var f=function(){
-    var y=window.scrollY;
-    h.classList.toggle('scrolled',y>40);
-    if(c)c.classList.toggle('show',y>240);
-  };
-  f();addEventListener('scroll',f,{passive:true});
-  
-</script>
+<script src="scroll.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
