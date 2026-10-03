@@ -427,6 +427,7 @@ address{font-style:normal;color:var(--ink-soft);margin-top:6px;}
 }
 #chat-messaggi{
   flex:1;
+  min-height:0;
   overflow-y:auto;
   padding:14px;
   font-size:14px;
@@ -448,4 +449,25 @@ address{font-style:normal;color:var(--ink-soft);margin-top:6px;}
   color:#fff;
   font-weight:600;
   cursor:pointer;
+}
+/* bolla del cliente: verde, a destra */
+.msg-cliente{
+  background:#0a7d38;
+  color:#fff;
+  padding:8px 12px;
+  border-radius:14px 14px 2px 14px;
+  margin:6px 0 6px auto;
+  width:fit-content;
+  max-width:85%;
+}
+/* bolla della chat: bianca con bordo rosso, a sinistra */
+.msg-chat{
+  background:#fff;
+  color:var(--ink);
+  border:2px solid #c62d22;
+  padding:8px 12px;
+  border-radius:14px 14px 14px 2px;
+  margin:6px 0;
+  width:fit-content;
+  max-width:85%;
 }
